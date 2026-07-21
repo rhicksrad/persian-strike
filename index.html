@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>PERSIAN STRIKE: RETRIBUTION — a Dead Format Games war</title>
+<meta name="description" content="One stolen gunship against the regime that trained us. A Desert Strike–style rotary-wing war crossed with base-building — four seasonal campaigns, living weather, and a sea that fights back. Coming to Windows PC.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="PERSIAN STRIKE: RETRIBUTION">
+<meta property="og:description" content="One stolen gunship against the regime that trained us. Four campaigns. One war. Coming to Windows PC.">
+<meta property="og:image" content="https://rhicksrad.github.io/persian-strike/media/still_c4_firstlight.jpg">
+<meta property="og:url" content="https://rhicksrad.github.io/persian-strike/">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🚁</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Rajdhani:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --ink: #0e0c09;
+    --panel: #17130e;
+    --panel-2: #1e1913;
+    --sand: #d8c49a;
+    --saffron: #f0a92e;
+    --saffron-dim: #b57d1e;
+    --red: #bf261f;
+    --white: #f2ede4;
+    --grey: #a99f8f;
+    --line: #2c251b;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    background: var(--ink);
+    color: var(--white);
+    font-family: 'Rajdhani', 'Segoe UI', sans-serif;
+    font-size: 18px;
+    line-height: 1.55;
+    -webkit-font-smoothing: antialiased;
+  }
+  h1, h2, h3, .stamp { font-family: 'Black Ops One', 'Rajdhani', sans-serif; font-weight: 400; letter-spacing: .04em; }
+  a { color: var(--saffron); text-decoration: none; }
+  img, video { display: block; max-width: 100%; }
+  section { scroll-margin-top: 72px; }
+
+  .tricolor { height: 6px; display: grid; grid-template-rows: 1fr 1fr 1fr; }
+  .tricolor span:nth-child(1) { background: var(--red); }
+  .tricolor span:nth-child(2) { background: #111; }
+  .tricolor span:nth-child(3) { background: var(--white); }
+
+  /* ---- nav ---- */
+  nav {
+    position: sticky; top: 0; z-index: 50;
+    display: flex; align-items: center; gap: 28px;
+    padding: 14px 28px;
+    background: rgba(14,12,9,.92);
+    backdrop-filter: blur(8px);
+    border-bottom: 1px solid var(--line);
+  }
+  nav .brand { font-family: 'Black Ops One'; font-size: 15px; color: var(--white); letter-spacing: .08em; }
+  nav .brand em { color: var(--saffron); font-style: normal; }
+  nav .links { margin-left: auto; display: flex; gap: 22px; }
+  nav .links a { font-weight: 700; font-size: 14px; letter-spacing: .14em; color: var(--grey); text-transform: uppercase; }
+  nav .links a:hover { color: var(--saffron); }
+  @media (max-width: 700px) { nav .links a:nth-child(n+4) { display: none; } }
+
+  /* ---- hero ---- */
+  header.hero {
+    position: relative;
+    min-height: 92vh;
+    display: flex; flex-direction: column; justify-content: flex-end;
+    background:
+      linear-gradient(180deg, rgba(14,12,9,.55) 0%, rgba(14,12,9,.15) 40%, rgba(14,12,9,.94) 88%),
+      url('media/still_c4_firstlight.jpg') center 32% / cover no-repeat;
+  }
+  .hero-inner { max-width: 1100px; margin: 0 auto; padding: 60px 28px 72px; width: 100%; text-align: center; }
+  .kicker {
+    font-weight: 700; letter-spacing: .38em; font-size: 13px; text-transform: uppercase;
+    color: var(--sand); opacity: .9;
+  }
+  .kicker b { color: var(--saffron); }
+  h1.title {
+    font-size: clamp(40px, 7.5vw, 96px);
+    line-height: .98;
+    margin: 18px 0 6px;
+    text-shadow: 0 4px 30px rgba(0,0,0,.75);
+  }
+  h1 .strike { color: var(--white); }
+  h1 .retrib { color: var(--saffron); display: block; font-size: .48em; letter-spacing: .3em; margin-top: 10px; }
+  .tagline { font-size: clamp(18px, 2.4vw, 26px); font-weight: 600; color: var(--sand); max-width: 720px; margin: 18px auto 8px; }
+  .subline { color: var(--grey); font-size: 16px; max-width: 640px; margin: 0 auto 34px; }
+  .cta-row { display: flex; gap: 16px; justify-content: center; flex-wrap: wrap; }
+  .btn {
+    display: inline-block; padding: 13px 30px;
+    font-family: 'Black Ops One'; font-size: 15px; letter-spacing: .1em; text-transform: uppercase;
+    border: 2px solid var(--saffron); color: var(--saffron);
+    transition: all .15s ease;
+  }
+  .btn:hover { background: var(--saffron); color: var(--ink); }
+  .btn.solid { background: var(--red); border-color: var(--red); color: var(--white); }
+  .btn.solid:hover { background: #d93a31; border-color: #d93a31; }
+  .platform { margin-top: 26px; font-size: 13px; letter-spacing: .22em; text-transform: uppercase; color: var(--grey); }
+
+  /* ---- sections ---- */
+  .wrap { max-width: 1100px; margin: 0 auto; padding: 84px 28px; }
+  .stamp {
+    display: inline-block; font-size: 13px; letter-spacing: .3em; text-transform: uppercase;
+    color: var(--ink); background: var(--saffron); padding: 4px 14px; margin-bottom: 18px;
+  }
+  h2 { font-size: clamp(28px, 4vw, 44px); margin-bottom: 10px; }
+  .lede { color: var(--grey); max-width: 760px; font-size: 19px; margin-bottom: 44px; }
+  .lede b { color: var(--sand); }
+
+  /* ---- cinematics ---- */
+  .film { background: var(--panel); border: 1px solid var(--line); }
+  .film video { width: 100%; aspect-ratio: 1920 / 1080; background: #000; }
+  .film .plate { padding: 16px 20px 18px; display: flex; align-items: baseline; gap: 14px; flex-wrap: wrap; }
+  .film .op { font-family: 'Black Ops One'; font-size: 17px; color: var(--saffron); letter-spacing: .06em; }
+  .film .season { font-size: 13px; font-weight: 700; letter-spacing: .24em; color: var(--red); text-transform: uppercase; }
+  .film .desc { flex-basis: 100%; color: var(--grey); font-size: 15.5px; }
+  .featured { margin-bottom: 26px; }
+  .film-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 26px; }
+  @media (max-width: 860px) { .film-grid { grid-template-columns: 1fr; } }
+
+  /* ---- campaigns ---- */
+  .camp-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 26px; }
+  @media (max-width: 860px) { .camp-grid { grid-template-columns: 1fr; } }
+  .camp { background: var(--panel); border: 1px solid var(--line); overflow: hidden; }
+  .camp img { aspect-ratio: 1920 / 991; object-fit: cover; width: 100%; filter: saturate(1.05); transition: transform .3s ease; }
+  .camp:hover img { transform: scale(1.025); }
+  .camp .body { padding: 18px 20px 22px; }
+  .camp h3 { font-size: 20px; color: var(--white); margin-bottom: 2px; }
+  .camp h3 span { color: var(--saffron); }
+  .camp .season { font-size: 12px; font-weight: 700; letter-spacing: .26em; color: var(--red); text-transform: uppercase; }
+  .camp p { color: var(--grey); font-size: 15.5px; margin-top: 8px; }
+
+  /* ---- features ---- */
+  .feat-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 22px; }
+  @media (max-width: 960px) { .feat-grid { grid-template-columns: 1fr 1fr; } }
+  @media (max-width: 640px) { .feat-grid { grid-template-columns: 1fr; } }
+  .feat { background: var(--panel-2); border: 1px solid var(--line); border-top: 3px solid var(--saffron-dim); padding: 20px 20px 24px; }
+  .feat h3 { font-size: 17px; color: var(--saffron); margin-bottom: 8px; }
+  .feat p { color: var(--grey); font-size: 15.5px; }
+  .feat p b { color: var(--sand); }
+
+  /* ---- gallery ---- */
+  .shots { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; }
+  @media (max-width: 860px) { .shots { grid-template-columns: 1fr 1fr; } }
+  .shots a { position: relative; display: block; overflow: hidden; border: 1px solid var(--line); }
+  .shots img { aspect-ratio: 1920 / 991; object-fit: cover; width: 100%; transition: transform .3s ease; }
+  .shots a:hover img { transform: scale(1.04); }
+  .shots .cap {
+    position: absolute; inset: auto 0 0 0; padding: 26px 12px 10px;
+    background: linear-gradient(180deg, transparent, rgba(14,12,9,.9));
+    font-size: 12px; font-weight: 700; letter-spacing: .18em; text-transform: uppercase; color: var(--sand);
+  }
+
+  /* ---- outro / footer ---- */
+  .creed { text-align: center; padding: 90px 28px; background: var(--panel); border-top: 1px solid var(--line); }
+  .creed h2 { color: var(--white); }
+  .creed h2 em { color: var(--saffron); font-style: normal; }
+  .creed p { color: var(--grey); max-width: 620px; margin: 14px auto 0; }
+  footer { padding: 40px 28px 52px; text-align: center; color: var(--grey); font-size: 14px; border-top: 1px solid var(--line); }
+  footer .df { font-family: 'Black Ops One'; letter-spacing: .18em; font-size: 15px; color: var(--sand); margin-bottom: 10px; }
+  footer .df b { color: var(--saffron); }
+  footer p { max-width: 720px; margin: 6px auto; }
+</style>
+</head>
+<body>
+
+<nav>
+  <span class="brand">PERSIAN STRIKE: <em>RETRIBUTION</em></span>
+  <span class="links">
+    <a href="#cinematics">Cinematics</a>
+    <a href="#campaigns">Campaigns</a>
+    <a href="#war">The War</a>
+    <a href="#gallery">Gallery</a>
+  </span>
+</nav>
+
+<header class="hero">
+  <div class="hero-inner">
+    <div class="kicker"><b>Dead Format Games</b> presents</div>
+    <h1 class="title"><span class="strike">PERSIAN STRIKE</span><span class="retrib">RETRIBUTION</span></h1>
+    <p class="tagline">One stolen gunship against the regime that trained us.</p>
+    <p class="subline">A rotary-wing strike war in the 16-bit tradition, crossed with a base you found, feed, and defend — flown from one cockpit.</p>
+    <div class="cta-row">
+      <a class="btn solid" href="#cinematics">Watch the cinematics</a>
+      <a class="btn" href="#campaigns">The four campaigns</a>
+    </div>
+    <div class="platform">Coming to Windows PC · No date. The war ships when it's won.</div>
+  </div>
+  <div class="tricolor"><span></span><span></span><span></span></div>
+</header>
+
+<section id="cinematics">
+  <div class="wrap">
+    <span class="stamp">Opening cinematics</span>
+    <h2>Three campaigns. Three cold opens.</h2>
+    <p class="lede">Every campaign begins in-engine, in real weather, on the real map you are about to fight over. These are the actual opening cutscenes — <b>captured from the game, not rendered for the trailer.</b></p>
+
+    <div class="film featured">
+      <video controls preload="none" poster="media/still_c1_simorgh.jpg">
+        <source src="media/c1_tondbad_opening.mp4" type="video/mp4">
+      </video>
+      <div class="plate">
+        <span class="op">OPERATION TONDBAD</span>
+        <span class="season">Spring · Campaign I</span>
+        <span class="desc">Spring, 0400, the Gulf of Simorgh. The night the squadron stopped taking orders — one frigate, one gunship, and every mixtape they could carry.</span>
+      </div>
+    </div>
+
+    <div class="film-grid">
+      <div class="film">
+        <video controls preload="none" poster="media/still_c2_bandar.jpg">
+          <source src="media/c2_tangeh_opening.mp4" type="video/mp4">
+        </video>
+        <div class="plate">
+          <span class="op">OPERATION TANGEH</span>
+          <span class="season">Summer · Campaign II</span>
+          <span class="desc">The Strait of Hormoz under a gulf thunderstorm. Bandar-e Azadi holds the east shore; the Marshal holds the west. One causeway between them.</span>
+        </div>
+      </div>
+      <div class="film">
+        <video controls preload="none" poster="media/still_c3_airhead.jpg">
+          <source src="media/c3_shahin_opening.mp4" type="video/mp4">
+        </video>
+        <div class="plate">
+          <span class="op">OPERATION SHAHIN</span>
+          <span class="season">Autumn · Campaign III</span>
+          <span class="desc">The northern front. Fog in the valleys, a relay war in the air, and the words nobody wanted to say out loud: world war.</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="tricolor"><span></span><span></span><span></span></div>
+
+<section id="campaigns">
+  <div class="wrap">
+    <span class="stamp">One seasonal war</span>
+    <h2>Four campaigns, four seasons, one country.</h2>
+    <p class="lede">Every operation has its own aircraft, weather, economy, soundtrack, and front line. Spring to winter — the coast, the strait, the north, and the last push on the capital.</p>
+    <div class="camp-grid">
+      <div class="camp">
+        <img src="media/still_c1_coast.jpg" alt="The coastal beachhead under a rolling dust storm wall" loading="lazy">
+        <div class="body">
+          <span class="season">Spring — the coast</span>
+          <h3>OPERATION <span>TONDBAD</span></h3>
+          <p>Defect, survive, and raise a beachhead from the first winched crate. Haboob walls march on the wind while workers stack your base block by block.</p>
+        </div>
+      </div>
+      <div class="camp">
+        <img src="media/still_c2_bridge.jpg" alt="The POL-E AZADI suspension bridge in a summer thunderstorm" loading="lazy">
+        <div class="body">
+          <span class="season">Summer — the strait</span>
+          <h3>OPERATION <span>TANGEH</span></h3>
+          <p>Two armies, one causeway, and a tide that opens and closes the war. Thunderheads roll in off the gulf and the drone swarm hunts anything that moves.</p>
+        </div>
+      </div>
+      <div class="camp">
+        <img src="media/still_c3_port.jpg" alt="A fog-drowned northern port at dusk" loading="lazy">
+        <div class="body">
+          <span class="season">Autumn — the north</span>
+          <h3>OPERATION <span>SHAHIN</span></h3>
+          <p>Copper forest, fog seas, a battle train on the coast line. Fight the relay war for the northern sky while the stronghold holds — or doesn't — behind you.</p>
+        </div>
+      </div>
+      <div class="camp">
+        <img src="media/still_c4_megabase.jpg" alt="The snowbound machine megabase laced with laser light" loading="lazy">
+        <div class="body">
+          <span class="season">Winter — three winters later</span>
+          <h3>OPERATION <span>AZADI</span></h3>
+          <p>The Marshal wrapped the old capital in his last war machine. Four coalition contingents, a ground blizzard, and a countdown. Its opening stays classified — some things you earn.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="war">
+  <div class="wrap">
+    <span class="stamp">The doctrine</span>
+    <h2>Fly the mouse. Found the base. Feed the war.</h2>
+    <p class="lede">Desert Strike's cockpit welded to a Command &amp; Conquer economy — <b>and the helicopter is the only cursor you get.</b></p>
+    <div class="feat-grid">
+      <div class="feat">
+        <h3>ONE COCKPIT, WHOLE WAR</h3>
+        <p>You never order a unit. You <b>deliver</b> the war: sling-load the crew, the blocks, the guns. Once a building stands, its production runs itself.</p>
+      </div>
+      <div class="feat">
+        <h3>BUILT BLOCK BY BLOCK</h3>
+        <p>Drop a tarp of loose blocks and a work crew, and watch the building physically go up. Barracks replace their own dead. Every wall you raise was flown in by you.</p>
+      </div>
+      <div class="feat">
+        <h3>WEATHER IS A COMBATANT</h3>
+        <p>Kilometer-wide dust walls on a live wind field. Gulf thunderstorms that surge the tide. Fog seas, ground blizzards, flash floods down the wadi. None of it is a skybox.</p>
+      </div>
+      <div class="feat">
+        <h3>THE LIVING SEA</h3>
+        <p>Calm mornings flatten to glass and mirror your rotors; fronts stand the swell up and rip spray off the wave tops. The sea stops bullets, floats the fleet, and obeys the tide.</p>
+      </div>
+      <div class="feat">
+        <h3>EVERYTHING KABOOMS</h3>
+        <p>Every building, bridge, tower, truck, and telegraph pole is destructible — and the regime hides caches and ambushers in the rubble. Demolition is a gamble worth taking.</p>
+      </div>
+      <div class="feat">
+        <h3>CONTRABAND TAPES</h3>
+        <p>The soundtrack is smuggled in crate by crate — banned music for a banned squadron. Choose your tunes. Fly the mission. Bring the tape home.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="tricolor"><span></span><span></span><span></span></div>
+
+<section id="gallery">
+  <div class="wrap">
+    <span class="stamp">From the flight recorder</span>
+    <h2>In-engine. In-weather. In trouble.</h2>
+    <p class="lede">Direct captures from campaign cinematics and vantage flights. Click any frame for the full image.</p>
+    <div class="shots">
+      <a href="media/still_c1_simorgh.jpg" target="_blank" rel="noopener"><img src="media/still_c1_simorgh.jpg" alt="The frigate Simorgh at dawn" loading="lazy"><span class="cap">The Simorgh, 0400</span></a>
+      <a href="media/still_c2_bridge.jpg" target="_blank" rel="noopener"><img src="media/still_c2_bridge.jpg" alt="The causeway in the storm" loading="lazy"><span class="cap">The causeway, day 19</span></a>
+      <a href="media/still_c3_airhead.jpg" target="_blank" rel="noopener"><img src="media/still_c3_airhead.jpg" alt="The northern airhead in fog" loading="lazy"><span class="cap">The airhead, first frost</span></a>
+      <a href="media/still_c4_megabase.jpg" target="_blank" rel="noopener"><img src="media/still_c4_megabase.jpg" alt="The machine capital at night" loading="lazy"><span class="cap">The machine capital</span></a>
+      <a href="media/still_c1_coast.jpg" target="_blank" rel="noopener"><img src="media/still_c1_coast.jpg" alt="The coast under the dust wall" loading="lazy"><span class="cap">The coast, storm inbound</span></a>
+      <a href="media/still_c4_firstlight.jpg" target="_blank" rel="noopener"><img src="media/still_c4_firstlight.jpg" alt="The gunship at first light" loading="lazy"><span class="cap">First light</span></a>
+    </div>
+  </div>
+</section>
+
+<div class="creed">
+  <h2>THE WAR SHIPS <em>WHEN IT'S WON.</em></h2>
+  <p>PERSIAN STRIKE: RETRIBUTION is in active development. Follow the repository for updates — the campaign log is written in the commits.</p>
+</div>
+
+<footer>
+  <div class="df">DEAD FORMAT <b>GAMES</b></div>
+  <p>© 2026 Dead Format Games. PERSIAN STRIKE: RETRIBUTION is a work of fiction. All names, places, factions, and events are fictional; any resemblance to real states or persons is coincidental.</p>
+  <p>Built with the Godot Engine. Assets CC0 or original.</p>
+</footer>
+
+</body>
+</html>
