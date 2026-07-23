@@ -3,7 +3,7 @@
 Public promotional site for **PERSIAN STRIKE: RETRIBUTION**, a Desert Strike–style
 rotary-wing war crossed with base-building, by Dead Format Games.
 
-Live site: https://rhicksrad.github.io/persian-strike/
+Live site: https://persianstrike.com/
 
 - Three in-engine opening cinematics (Operations TONDBAD, TANGEH, SHAHIN)
 - In-engine campaign stills

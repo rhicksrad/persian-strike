@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://rhicksrad.github.io/persian-strike/sitemap.xml
+Sitemap: https://persianstrike.com/sitemap.xml
