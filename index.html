@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>PERSIAN STRIKE: RETRIBUTION — a Dead Format Games war</title>
-<meta name="description" content="It started with one stolen gunship. It ends at the gates of the capital. A Desert Strike–style rotary-wing war crossed with base-building — four seasonal campaigns, living weather, and a sea that fights back. Coming to Windows PC.">
+<meta name="description" content="A Desert Strike–style rotary-wing war crossed with base-building — four seasonal campaigns, living weather, and a sea that fights back. From Dead Format Games, coming to Windows PC.">
 <link rel="canonical" href="https://rhicksrad.github.io/persian-strike/">
 <meta name="robots" content="index, follow, max-image-preview:large">
 <meta name="theme-color" content="#0e0c09">
@@ -12,13 +12,13 @@
 <meta property="og:site_name" content="PERSIAN STRIKE: RETRIBUTION">
 <meta property="og:locale" content="en_US">
 <meta property="og:title" content="PERSIAN STRIKE: RETRIBUTION — a Dead Format Games war">
-<meta property="og:description" content="It started with one stolen gunship. It ends at the gates of the capital. Four campaigns. One war. Coming to Windows PC.">
+<meta property="og:description" content="Four campaigns. One war. A Desert Strike–style strike war crossed with base-building, coming to Windows PC.">
 <meta property="og:image" content="https://rhicksrad.github.io/persian-strike/media/menu_backplate.png">
 <meta property="og:image:alt" content="Pixel-art key art: a gunship silhouetted over dark water, oil derricks burning on the horizon under a crescent moon.">
 <meta property="og:url" content="https://rhicksrad.github.io/persian-strike/">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="PERSIAN STRIKE: RETRIBUTION">
-<meta name="twitter:description" content="It started with one stolen gunship. It ends at the gates of the capital. Four campaigns. One war. Coming to Windows PC.">
+<meta name="twitter:description" content="Four campaigns. One war. A Desert Strike–style strike war crossed with base-building, coming to Windows PC.">
 <meta name="twitter:image" content="https://rhicksrad.github.io/persian-strike/media/menu_backplate.png">
 <meta name="twitter:image:alt" content="Pixel-art key art: a gunship silhouetted over dark water, oil derricks burning on the horizon under a crescent moon.">
 <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🚁</text></svg>">
@@ -222,6 +222,18 @@
     font-size: 12px; font-weight: 700; letter-spacing: .18em; text-transform: uppercase; color: var(--sand);
   }
 
+  /* ---- the bird ---- */
+  .bird-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; }
+  @media (max-width: 860px) { .bird-grid { grid-template-columns: 1fr; } }
+  .bird-grid a { position: relative; display: block; overflow: hidden; border: 1px solid var(--line); border-bottom: 3px solid var(--saffron-dim); }
+  .bird-grid img { aspect-ratio: 1920 / 1080; object-fit: cover; width: 100%; transition: transform .3s ease; }
+  .bird-grid a:hover img { transform: scale(1.04); }
+  .bird-grid .cap {
+    position: absolute; inset: auto 0 0 0; padding: 26px 14px 10px;
+    background: linear-gradient(180deg, transparent, rgba(14,12,9,.92));
+    font-size: 12px; font-weight: 700; letter-spacing: .18em; text-transform: uppercase; color: var(--sand);
+  }
+
   /* ---- gallery ---- */
   .shots { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; }
   @media (max-width: 860px) { .shots { grid-template-columns: 1fr 1fr; } }
@@ -254,6 +266,7 @@
     <a href="#campaigns">Campaigns</a>
     <a href="#war">The War</a>
     <a href="#action">Gun Camera</a>
+    <a href="#bird">The Bird</a>
     <a href="#gallery">Gallery</a>
   </span>
 </nav>
@@ -262,13 +275,12 @@
   <div class="hero-inner">
     <div class="kicker"><b>Dead Format Games</b> presents</div>
     <h1 class="title"><span class="strike">PERSIAN STRIKE</span><span class="retrib">RETRIBUTION</span></h1>
-    <p class="tagline">It started with one stolen gunship. It ends at the gates of the capital.</p>
     <p class="subline">A rotary-wing strike war in the 16-bit tradition, crossed with a base you found, feed, and defend — flown from one cockpit.</p>
     <div class="cta-row">
       <a class="btn solid" href="#cinematics">Watch the cinematics</a>
       <a class="btn" href="#campaigns">The four campaigns</a>
     </div>
-    <div class="platform">Coming to Windows PC · No date. The war ships when it's won.</div>
+    <div class="platform">Coming soon to Windows PC</div>
   </div>
   <div class="tricolor"><span></span><span></span><span></span></div>
 </header>
@@ -426,6 +438,20 @@
   </div>
 </section>
 
+<section id="bird">
+  <div class="wrap">
+    <span class="stamp">The airframe</span>
+    <h2>Meet the bird.</h2>
+    <p class="lede">She hauls the crew, slings the blocks, fires the rockets, and brings the tapes home. Whatever the war needs next, <b>it arrives under her rotors.</b></p>
+    <div class="bird-grid">
+      <a href="media/bird_lowpass.jpg" target="_blank" rel="noopener"><img src="media/bird_lowpass.jpg" alt="The gunship silhouetted in a low pass over sunset water" loading="lazy"><span class="cap">Low pass at last light</span></a>
+      <a href="media/bird_attack.jpg" target="_blank" rel="noopener"><img src="media/bird_attack.jpg" alt="Close underside view of the gunship on an attack run, gun lit, rockets underwing" loading="lazy"><span class="cap">Attack run — gun hot</span></a>
+      <a href="media/bird_winch.jpg" target="_blank" rel="noopener"><img src="media/bird_winch.jpg" alt="The gunship hovering with a crate on the winch line over the gulf" loading="lazy"><span class="cap">Sling load inbound</span></a>
+      <a href="media/bird_darkpad.jpg" target="_blank" rel="noopener"><img src="media/bird_darkpad.jpg" alt="The gunship passing overhead against snowfall at dusk" loading="lazy"><span class="cap">Overhead, in the snow — the last one</span></a>
+    </div>
+  </div>
+</section>
+
 <section id="gallery">
   <div class="wrap">
     <span class="stamp">From the flight recorder</span>
@@ -443,7 +469,7 @@
 </section>
 
 <div class="creed">
-  <h2>THE WAR SHIPS <em>WHEN IT'S WON.</em></h2>
+  <h2>COMING <em>SOON.</em></h2>
   <p>PERSIAN STRIKE: RETRIBUTION is in active development. Follow the repository for updates — the campaign log is written in the commits.</p>
 </div>
 
