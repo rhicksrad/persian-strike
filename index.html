@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>PERSIAN STRIKE: RETRIBUTION — a Dead Format Games war</title>
-<meta name="description" content="A Desert Strike–style rotary-wing war crossed with base-building — four seasonal campaigns, living weather, and a sea that fights back. From Dead Format Games, coming to Windows PC.">
+<meta name="description" content="An alternate-history 1990s gulf war that never happened: a Desert Strike–style rotary-wing war crossed with base-building — four seasonal campaigns, living weather, and a sea that fights back. From Dead Format Games, coming to Windows PC.">
 <link rel="canonical" href="https://rhicksrad.github.io/persian-strike/">
 <meta name="robots" content="index, follow, max-image-preview:large">
 <meta name="theme-color" content="#0e0c09">
@@ -33,7 +33,7 @@
   "name": "PERSIAN STRIKE: RETRIBUTION",
   "url": "https://rhicksrad.github.io/persian-strike/",
   "image": "https://rhicksrad.github.io/persian-strike/media/menu_backplate.png",
-  "description": "A Desert Strike–style rotary-wing war crossed with base-building. Four seasonal campaigns, living weather, a destructible country, and a sea that fights back. In development for Windows PC.",
+  "description": "An alternate-history 1990s gulf war that never happened. A Desert Strike–style rotary-wing war crossed with base-building: four seasonal campaigns, living weather, a destructible country, and a sea that fights back. In development for Windows PC.",
   "genre": ["Action", "Strategy"],
   "gamePlatform": "PC (Microsoft Windows)",
   "playMode": "SinglePlayer",
@@ -188,6 +188,18 @@
   .film-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 26px; }
   @media (max-width: 860px) { .film-grid { grid-template-columns: 1fr; } }
 
+  /* ---- story beats ---- */
+  .beats { display: grid; gap: 20px; }
+  .beat { display: grid; grid-template-columns: 340px 1fr; gap: 0; background: var(--panel); border: 1px solid var(--line); overflow: hidden; align-items: stretch; }
+  .beat img { width: 100%; height: 100%; object-fit: cover; display: block; }
+  .beat .body { padding: 18px 24px 20px; }
+  .beat .season { font-size: 12px; font-weight: 700; letter-spacing: .26em; color: var(--red); text-transform: uppercase; }
+  .beat h3 { font-size: 20px; color: var(--white); margin: 4px 0 8px; }
+  .beat h3 em { color: var(--saffron); font-style: normal; }
+  .beat p { color: var(--grey); font-size: 15.5px; }
+  .beat p b { color: var(--sand); }
+  @media (max-width: 820px) { .beat { grid-template-columns: 1fr; } .beat img { aspect-ratio: 16 / 8; } }
+
   /* ---- campaigns ---- */
   .camp-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 26px; }
   @media (max-width: 860px) { .camp-grid { grid-template-columns: 1fr; } }
@@ -265,6 +277,7 @@
   <span class="brand">PERSIAN STRIKE: <em>RETRIBUTION</em></span>
   <span class="links">
     <a href="#cinematics">Cinematics</a>
+    <a href="#story">Story</a>
     <a href="#campaigns">Campaigns</a>
     <a href="#bird">The Bird</a>
     <a href="#war">The War</a>
@@ -339,6 +352,48 @@
 </section>
 
 <div class="tricolor"><span></span><span></span><span></span></div>
+
+<section id="story">
+  <div class="wrap">
+    <span class="stamp">Alternate history</span>
+    <h2>The war that never happened.</h2>
+    <p class="lede">A 1990s that never was. In the <b>Republic of Parsava</b> — a fictional country on the Gulf — the oil, the radars, and the television all answer to <b>Marshal Rashid al-Ghazi</b>, a foreign-born strongman ruling Persian soil. When his Guard fired on protesters, one battleship's crew stopped taking orders. Every name in this war tells you whose side it's on — ours speak Persian, his wear the regime's borrowed styling — the music is contraband, the state news calls us pirates, and the villages cheer when we fly over.</p>
+    <div class="beats">
+      <div class="beat">
+        <img src="media/beat_spring.jpg" alt="The battleship Simorgh flying rebel colors off the liberated Tondbad coast" loading="lazy">
+        <div class="body">
+          <span class="season">Spring — Operation Tondbad</span>
+          <h3>THE <em>MUTINY</em></h3>
+          <p>High noon in the Gulf of Simorgh: the admiral walks the plank, the Simorgh runs up the tricolor, and the squadron raises a beachhead on the regime's own coast — block by block, under a sky full of dust. By spring's end, <b>the coast is ours.</b></p>
+        </div>
+      </div>
+      <div class="beat">
+        <img src="media/beat_summer.jpg" alt="The liberated eastern shore of the strait, ports rebuilt and lanes reopened" loading="lazy">
+        <div class="body">
+          <span class="season">Summer — Operation Tangeh</span>
+          <h3>THE <em>STRAIT</em></h3>
+          <p>The Marshal and his foreign backers close Tangeh-ye Hormoz, and Bandar-e Azadi holds out on rations and salvage. Carry the revolution port by port, break open the Zendan, and get the enriched material out without turning the coast to glass. <b>The strait opens.</b></p>
+        </div>
+      </div>
+      <div class="beat">
+        <img src="media/beat_autumn.jpg" alt="First snow burying the autumn front under a darkening sky" loading="lazy">
+        <div class="body">
+          <span class="season">Autumn — Operation Shahin</span>
+          <h3>WORLD <em>WAR</em></h3>
+          <p>The reformed USSR and Pyongyang pick their side, and the word nobody wanted finally gets said out loud. On the Caspian front the relay war decides who owns the sky while an armored train prowls the coastal rails. Then the snow starts falling — <b>and doesn't stop for three winters.</b></p>
+        </div>
+      </div>
+      <div class="beat">
+        <img src="media/beat_winter.jpg" alt="Snowbound Parsava at peace, the tricolor flying over a quiet checkpoint" loading="lazy">
+        <div class="body">
+          <span class="season">Winter — Operation Azadi · Three winters later</span>
+          <h3>FIRST <em>LIGHT</em></h3>
+          <p>Three years on, the Azadi movement <b>is</b> the government of Parsava — and al-Ghazi has wrapped the old capital in a war machine that fights on without him. Four contingents. One wall. Twenty-two minutes on the silo clock. At first light: <b>Parsava is free.</b></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
 <section id="campaigns">
   <div class="wrap">
