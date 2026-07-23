@@ -57,13 +57,14 @@ nav .links a.active { color: var(--saffron); }
 header.hero {
   position: relative;
   min-height: 92vh;
-  display: flex; flex-direction: column; justify-content: flex-end;
+  display: flex; flex-direction: column; justify-content: flex-start;
   background:
-    linear-gradient(180deg, rgba(14,12,9,.35) 0%, rgba(14,12,9,.05) 45%, rgba(14,12,9,.92) 90%),
-    url('media/menu_backplate.png') center 30% / cover no-repeat;
+    linear-gradient(180deg, rgba(14,12,9,.72) 0%, rgba(14,12,9,.22) 34%, rgba(14,12,9,.06) 55%, rgba(14,12,9,.55) 100%),
+    url('media/menu_backplate.png') center 55% / cover no-repeat;
   image-rendering: pixelated;
 }
-.hero-inner { max-width: 1100px; margin: 0 auto; padding: 60px 28px 72px; width: 100%; text-align: center; }
+.hero-inner { max-width: 1100px; margin: 0 auto; padding: 64px 28px 0; width: 100%; text-align: center; flex: 1; }
+header.hero .tricolor { margin-top: auto; }
 .kicker {
   font-weight: 700; letter-spacing: .38em; font-size: 13px; text-transform: uppercase;
   color: var(--sand); opacity: .9;
