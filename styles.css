@@ -63,8 +63,9 @@ header.hero {
     url('media/menu_backplate.png') center 55% / cover no-repeat;
   image-rendering: pixelated;
 }
-.hero-inner { max-width: 1100px; margin: 0 auto; padding: 64px 28px 0; width: 100%; text-align: center; flex: 1; }
-header.hero .tricolor { margin-top: auto; }
+.hero-inner { max-width: 1100px; margin: 0 auto; padding: 34px 28px 0; width: 100%; text-align: center; flex: 1; }
+.hero-bottom { max-width: 1100px; margin: 0 auto; padding: 0 28px 44px; width: 100%; text-align: center; }
+.hero-bottom .subline { margin: 0 auto 18px; }
 .kicker {
   font-weight: 700; letter-spacing: .38em; font-size: 13px; text-transform: uppercase;
   color: var(--sand); opacity: .9;
