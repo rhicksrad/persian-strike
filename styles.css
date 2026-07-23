@@ -1,0 +1,203 @@
+@font-face {
+  font-family: 'Black Ops One';
+  src: url('fonts/BlackOpsOne-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-display: swap;
+}
+:root {
+  --ink: #0e0c09;
+  --panel: #17130e;
+  --panel-2: #1e1913;
+  --sand: #d8c49a;
+  --saffron: #f0a92e;
+  --saffron-dim: #b57d1e;
+  --red: #bf261f;
+  --white: #f2ede4;
+  --grey: #a99f8f;
+  --line: #2c251b;
+}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  background: var(--ink);
+  color: var(--white);
+  font-family: 'Open Sans', 'Segoe UI', sans-serif;
+  font-size: 18px;
+  line-height: 1.55;
+  -webkit-font-smoothing: antialiased;
+}
+h1, h2, h3, .stamp { font-family: 'Black Ops One', 'Open Sans', sans-serif; font-weight: 400; letter-spacing: .04em; }
+a { color: var(--saffron); text-decoration: none; }
+img, video { display: block; max-width: 100%; }
+section { scroll-margin-top: 72px; }
+
+.tricolor { height: 6px; display: grid; grid-template-rows: 1fr 1fr 1fr; }
+.tricolor span:nth-child(1) { background: var(--red); }
+.tricolor span:nth-child(2) { background: #111; }
+.tricolor span:nth-child(3) { background: var(--white); }
+
+/* ---- nav ---- */
+nav {
+  position: sticky; top: 0; z-index: 50;
+  display: flex; align-items: center; gap: 28px;
+  padding: 14px 28px;
+  background: rgba(14,12,9,.92);
+  backdrop-filter: blur(8px);
+  border-bottom: 1px solid var(--line);
+}
+nav .brand { font-family: 'Black Ops One', sans-serif; font-size: 15px; color: var(--white); letter-spacing: .08em; }
+nav .brand em { color: var(--saffron); font-style: normal; }
+nav .links { margin-left: auto; display: flex; gap: 22px; }
+nav .links a { font-weight: 700; font-size: 14px; letter-spacing: .14em; color: var(--grey); text-transform: uppercase; }
+nav .links a:hover { color: var(--saffron); }
+nav .links a.active { color: var(--saffron); }
+@media (max-width: 700px) { nav .links { gap: 14px; } nav .links a { font-size: 12px; letter-spacing: .08em; } }
+
+/* ---- main hero ---- */
+header.hero {
+  position: relative;
+  min-height: 92vh;
+  display: flex; flex-direction: column; justify-content: flex-end;
+  background:
+    linear-gradient(180deg, rgba(14,12,9,.35) 0%, rgba(14,12,9,.05) 45%, rgba(14,12,9,.92) 90%),
+    url('media/menu_backplate.png') center 30% / cover no-repeat;
+  image-rendering: pixelated;
+}
+.hero-inner { max-width: 1100px; margin: 0 auto; padding: 60px 28px 72px; width: 100%; text-align: center; }
+.kicker {
+  font-weight: 700; letter-spacing: .38em; font-size: 13px; text-transform: uppercase;
+  color: var(--sand); opacity: .9;
+}
+.kicker b { color: var(--saffron); }
+h1.title {
+  font-size: clamp(40px, 7.5vw, 96px);
+  line-height: .98;
+  margin: 18px 0 6px;
+  text-shadow: 0 4px 30px rgba(0,0,0,.75);
+}
+h1 .strike { color: var(--white); }
+h1 .retrib { color: var(--saffron); display: block; font-size: .48em; letter-spacing: .3em; margin-top: 10px; }
+.subline { color: var(--grey); font-size: 16px; max-width: 640px; margin: 18px auto 34px; }
+.cta-row { display: flex; gap: 16px; justify-content: center; flex-wrap: wrap; }
+.btn {
+  display: inline-block; padding: 13px 30px;
+  font-family: 'Black Ops One', sans-serif; font-size: 15px; letter-spacing: .1em; text-transform: uppercase;
+  border: 2px solid var(--saffron); color: var(--saffron);
+  transition: all .15s ease;
+}
+.btn:hover { background: var(--saffron); color: var(--ink); }
+.btn.solid { background: var(--red); border-color: var(--red); color: var(--white); }
+.btn.solid:hover { background: #d93a31; border-color: #d93a31; }
+.platform { margin-top: 26px; font-size: 13px; letter-spacing: .22em; text-transform: uppercase; color: var(--grey); }
+
+/* ---- campaign page hero ---- */
+header.page-hero {
+  position: relative;
+  min-height: 54vh;
+  display: flex; flex-direction: column; justify-content: flex-end;
+  background-size: cover;
+  background-position: center 30%;
+}
+header.page-hero .shade {
+  position: absolute; inset: 0;
+  background: linear-gradient(180deg, rgba(14,12,9,.55) 0%, rgba(14,12,9,.18) 45%, rgba(14,12,9,.94) 92%);
+}
+.page-hero-inner { position: relative; max-width: 1100px; margin: 0 auto; padding: 90px 28px 44px; width: 100%; }
+.page-hero h1 { font-size: clamp(32px, 5.2vw, 64px); line-height: 1.02; text-shadow: 0 4px 30px rgba(0,0,0,.75); }
+.page-hero h1 em { color: var(--saffron); font-style: normal; }
+.page-hero .season { font-size: 13px; font-weight: 700; letter-spacing: .3em; color: var(--red); text-transform: uppercase; }
+.page-hero .tag { color: var(--sand); font-size: 18px; font-weight: 600; margin-top: 10px; max-width: 720px; }
+
+/* ---- sections ---- */
+.wrap { max-width: 1100px; margin: 0 auto; padding: 84px 28px; }
+.wrap.tight { padding: 56px 28px; }
+.stamp {
+  display: inline-block; font-size: 13px; letter-spacing: .3em; text-transform: uppercase;
+  color: var(--ink); background: var(--saffron); padding: 4px 14px; margin-bottom: 18px;
+}
+h2 { font-size: clamp(28px, 4vw, 44px); margin-bottom: 10px; }
+.lede { color: var(--grey); max-width: 760px; font-size: 19px; margin-bottom: 44px; }
+.lede b { color: var(--sand); }
+
+/* ---- films ---- */
+.film { background: var(--panel); border: 1px solid var(--line); }
+.film video { width: 100%; aspect-ratio: 1920 / 1080; background: #000; }
+.film .plate { padding: 16px 20px 18px; display: flex; align-items: baseline; gap: 14px; flex-wrap: wrap; }
+.film .op { font-family: 'Black Ops One', sans-serif; font-size: 17px; color: var(--saffron); letter-spacing: .06em; }
+.film .season { font-size: 13px; font-weight: 700; letter-spacing: .24em; color: var(--red); text-transform: uppercase; }
+.film .desc { flex-basis: 100%; color: var(--grey); font-size: 15.5px; }
+
+/* ---- story beats ---- */
+.beats { display: grid; gap: 20px; }
+.beat { display: grid; grid-template-columns: 340px 1fr; gap: 0; background: var(--panel); border: 1px solid var(--line); overflow: hidden; align-items: stretch; }
+.beat img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.beat .body { padding: 18px 24px 20px; }
+.beat .season { font-size: 12px; font-weight: 700; letter-spacing: .26em; color: var(--red); text-transform: uppercase; }
+.beat h3 { font-size: 20px; color: var(--white); margin: 4px 0 8px; }
+.beat h3 em { color: var(--saffron); font-style: normal; }
+.beat p { color: var(--grey); font-size: 15.5px; }
+.beat p b { color: var(--sand); }
+.beat .go { display: inline-block; margin-top: 10px; font-weight: 700; font-size: 13px; letter-spacing: .18em; text-transform: uppercase; }
+@media (max-width: 820px) { .beat { grid-template-columns: 1fr; } .beat img { aspect-ratio: 16 / 8; } }
+
+/* ---- campaign cards ---- */
+.camp-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 26px; }
+@media (max-width: 860px) { .camp-grid { grid-template-columns: 1fr; } }
+.camp { background: var(--panel); border: 1px solid var(--line); overflow: hidden; display: block; }
+.camp img { aspect-ratio: 1920 / 991; object-fit: cover; width: 100%; filter: saturate(1.05); transition: transform .3s ease; }
+.camp:hover img { transform: scale(1.025); }
+.camp .body { padding: 18px 20px 22px; }
+.camp h3 { font-size: 20px; color: var(--white); margin-bottom: 2px; }
+.camp h3 span { color: var(--saffron); }
+.camp .season { font-size: 12px; font-weight: 700; letter-spacing: .26em; color: var(--red); text-transform: uppercase; }
+.camp p { color: var(--grey); font-size: 15.5px; margin-top: 8px; }
+.camp .go { display: inline-block; margin-top: 12px; font-weight: 700; font-size: 13px; letter-spacing: .18em; text-transform: uppercase; }
+
+/* ---- doctrine tiles ---- */
+.feat-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; }
+@media (max-width: 1080px) { .feat-grid { grid-template-columns: repeat(3, 1fr); } }
+@media (max-width: 960px) { .feat-grid { grid-template-columns: 1fr 1fr; } }
+@media (max-width: 640px) { .feat-grid { grid-template-columns: 1fr; } }
+.feat { background: var(--panel-2); border: 1px solid var(--line); border-top: 3px solid var(--saffron-dim); overflow: hidden; }
+.feat img { width: 100%; aspect-ratio: 16 / 9; object-fit: cover; display: block; }
+.feat .body { padding: 16px 18px 22px; }
+.feat h3 { font-size: 17px; color: var(--saffron); margin-bottom: 8px; }
+.feat p { color: var(--grey); font-size: 15.5px; }
+.feat p b { color: var(--sand); }
+
+/* ---- the bird ---- */
+.bird-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; }
+@media (max-width: 860px) { .bird-grid { grid-template-columns: 1fr; } }
+.bird-grid a { position: relative; display: block; overflow: hidden; border: 1px solid var(--line); border-bottom: 3px solid var(--saffron-dim); }
+.bird-grid img { aspect-ratio: 1920 / 1080; object-fit: cover; width: 100%; transition: transform .3s ease; }
+.bird-grid a:hover img { transform: scale(1.04); }
+.bird-grid .cap {
+  position: absolute; inset: auto 0 0 0; padding: 26px 14px 10px;
+  background: linear-gradient(180deg, transparent, rgba(14,12,9,.92));
+  font-size: 12px; font-weight: 700; letter-spacing: .18em; text-transform: uppercase; color: var(--sand);
+}
+
+/* ---- campaign page gallery ---- */
+.shots { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+@media (max-width: 700px) { .shots { grid-template-columns: 1fr; } }
+.shots a { position: relative; display: block; overflow: hidden; border: 1px solid var(--line); }
+.shots img { aspect-ratio: 1920 / 991; object-fit: cover; width: 100%; transition: transform .3s ease; }
+.shots a:hover img { transform: scale(1.04); }
+.shots .cap {
+  position: absolute; inset: auto 0 0 0; padding: 26px 12px 10px;
+  background: linear-gradient(180deg, transparent, rgba(14,12,9,.9));
+  font-size: 12px; font-weight: 700; letter-spacing: .18em; text-transform: uppercase; color: var(--sand);
+}
+
+/* ---- prev/next ---- */
+.prevnext { display: flex; justify-content: space-between; gap: 16px; flex-wrap: wrap; }
+
+/* ---- outro / footer ---- */
+.creed { text-align: center; padding: 90px 28px; background: var(--panel); border-top: 1px solid var(--line); }
+.creed h2 { color: var(--white); }
+.creed h2 em { color: var(--saffron); font-style: normal; }
+.creed p { color: var(--grey); max-width: 620px; margin: 14px auto 0; }
+footer { padding: 40px 28px 52px; text-align: center; color: var(--grey); font-size: 14px; border-top: 1px solid var(--line); }
+footer .df { font-family: 'Black Ops One', sans-serif; letter-spacing: .18em; font-size: 15px; color: var(--sand); margin-bottom: 10px; }
+footer .df b { color: var(--saffron); }
+footer p { max-width: 720px; margin: 6px auto; }

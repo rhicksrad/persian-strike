@@ -4,11 +4,16 @@
         xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
   <url>
     <loc>https://rhicksrad.github.io/persian-strike/</loc>
-    <lastmod>2026-07-22</lastmod>
+    <lastmod>2026-07-23</lastmod>
     <changefreq>weekly</changefreq>
     <image:image>
       <image:loc>https://rhicksrad.github.io/persian-strike/media/menu_backplate.png</image:loc>
     </image:image>
+  </url>
+  <url>
+    <loc>https://rhicksrad.github.io/persian-strike/c1.html</loc>
+    <lastmod>2026-07-23</lastmod>
+    <changefreq>monthly</changefreq>
     <video:video>
       <video:thumbnail_loc>https://rhicksrad.github.io/persian-strike/media/still_c1_simorgh.jpg</video:thumbnail_loc>
       <video:title>PERSIAN STRIKE: RETRIBUTION — Operation Tondbad opening cinematic</video:title>
@@ -17,6 +22,11 @@
       <video:publication_date>2026-07-22</video:publication_date>
       <video:family_friendly>yes</video:family_friendly>
     </video:video>
+  </url>
+  <url>
+    <loc>https://rhicksrad.github.io/persian-strike/c2.html</loc>
+    <lastmod>2026-07-23</lastmod>
+    <changefreq>monthly</changefreq>
     <video:video>
       <video:thumbnail_loc>https://rhicksrad.github.io/persian-strike/media/still_c2_bandar.jpg</video:thumbnail_loc>
       <video:title>PERSIAN STRIKE: RETRIBUTION — Operation Tangeh opening cinematic</video:title>
@@ -25,14 +35,24 @@
       <video:publication_date>2026-07-22</video:publication_date>
       <video:family_friendly>yes</video:family_friendly>
     </video:video>
+  </url>
+  <url>
+    <loc>https://rhicksrad.github.io/persian-strike/c3.html</loc>
+    <lastmod>2026-07-23</lastmod>
+    <changefreq>monthly</changefreq>
     <video:video>
       <video:thumbnail_loc>https://rhicksrad.github.io/persian-strike/media/still_c3_airhead.jpg</video:thumbnail_loc>
       <video:title>PERSIAN STRIKE: RETRIBUTION — Operation Shahin opening cinematic</video:title>
-      <video:description>Campaign III opening cinematic, captured in-engine: the relay war on the northern front.</video:description>
+      <video:description>Campaign III opening cinematic, captured in-engine: the relay war on the Caspian front.</video:description>
       <video:content_loc>https://rhicksrad.github.io/persian-strike/media/c3_shahin_opening.mp4</video:content_loc>
       <video:publication_date>2026-07-22</video:publication_date>
       <video:family_friendly>yes</video:family_friendly>
     </video:video>
+  </url>
+  <url>
+    <loc>https://rhicksrad.github.io/persian-strike/c4.html</loc>
+    <lastmod>2026-07-23</lastmod>
+    <changefreq>monthly</changefreq>
     <video:video>
       <video:thumbnail_loc>https://rhicksrad.github.io/persian-strike/media/still_c4_megabase.jpg</video:thumbnail_loc>
       <video:title>PERSIAN STRIKE: RETRIBUTION — Operation Azadi opening cinematic</video:title>

@@ -12,19 +12,20 @@
 <meta property="og:site_name" content="PERSIAN STRIKE: RETRIBUTION">
 <meta property="og:locale" content="en_US">
 <meta property="og:title" content="PERSIAN STRIKE: RETRIBUTION — a Dead Format Games war">
-<meta property="og:description" content="Four campaigns. One war. A Desert Strike–style strike war crossed with base-building, coming to Windows PC.">
+<meta property="og:description" content="Four campaigns. One war. An alternate-history strike war crossed with base-building, coming to Windows PC.">
 <meta property="og:image" content="https://rhicksrad.github.io/persian-strike/media/menu_backplate.png">
 <meta property="og:image:alt" content="Pixel-art key art: a gunship silhouetted over dark water, oil derricks burning on the horizon under a crescent moon.">
 <meta property="og:url" content="https://rhicksrad.github.io/persian-strike/">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="PERSIAN STRIKE: RETRIBUTION">
-<meta name="twitter:description" content="Four campaigns. One war. A Desert Strike–style strike war crossed with base-building, coming to Windows PC.">
+<meta name="twitter:description" content="Four campaigns. One war. An alternate-history strike war crossed with base-building, coming to Windows PC.">
 <meta name="twitter:image" content="https://rhicksrad.github.io/persian-strike/media/menu_backplate.png">
 <meta name="twitter:image:alt" content="Pixel-art key art: a gunship silhouetted over dark water, oil derricks burning on the horizon under a crescent moon.">
 <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🚁</text></svg>">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
 <link rel="preload" as="image" href="media/menu_backplate.png">
 <script type="application/ld+json">
 {
@@ -38,251 +39,20 @@
   "gamePlatform": "PC (Microsoft Windows)",
   "playMode": "SinglePlayer",
   "publisher": { "@type": "Organization", "name": "Dead Format Games" },
-  "author": { "@type": "Organization", "name": "Dead Format Games" },
-  "video": [
-    {
-      "@type": "VideoObject",
-      "name": "Operation Tondbad — opening cinematic",
-      "description": "Campaign I opening: the mutiny in the Gulf of Simorgh, captured in-engine.",
-      "thumbnailUrl": "https://rhicksrad.github.io/persian-strike/media/still_c1_simorgh.jpg",
-      "contentUrl": "https://rhicksrad.github.io/persian-strike/media/c1_tondbad_opening.mp4",
-      "uploadDate": "2026-07-22"
-    },
-    {
-      "@type": "VideoObject",
-      "name": "Operation Tangeh — opening cinematic",
-      "description": "Campaign II opening: Tangeh-ye Hormoz under a gulf thunderstorm, captured in-engine.",
-      "thumbnailUrl": "https://rhicksrad.github.io/persian-strike/media/still_c2_bandar.jpg",
-      "contentUrl": "https://rhicksrad.github.io/persian-strike/media/c2_tangeh_opening.mp4",
-      "uploadDate": "2026-07-22"
-    },
-    {
-      "@type": "VideoObject",
-      "name": "Operation Shahin — opening cinematic",
-      "description": "Campaign III opening: the relay war on the fog-bound northern front, captured in-engine.",
-      "thumbnailUrl": "https://rhicksrad.github.io/persian-strike/media/still_c3_airhead.jpg",
-      "contentUrl": "https://rhicksrad.github.io/persian-strike/media/c3_shahin_opening.mp4",
-      "uploadDate": "2026-07-22"
-    },
-    {
-      "@type": "VideoObject",
-      "name": "Operation Azadi — opening cinematic",
-      "description": "Campaign IV opening: three winters later, the final offensive on the Daryush Basin, captured in-engine.",
-      "thumbnailUrl": "https://rhicksrad.github.io/persian-strike/media/still_c4_megabase.jpg",
-      "contentUrl": "https://rhicksrad.github.io/persian-strike/media/c4_azadi_opening.mp4",
-      "uploadDate": "2026-07-22"
-    }
-  ]
+  "author": { "@type": "Organization", "name": "Dead Format Games" }
 }
 </script>
-<style>
-  @font-face {
-    font-family: 'Black Ops One';
-    src: url('fonts/BlackOpsOne-Regular.ttf') format('truetype');
-    font-weight: 400;
-    font-display: swap;
-  }
-  :root {
-    --ink: #0e0c09;
-    --panel: #17130e;
-    --panel-2: #1e1913;
-    --sand: #d8c49a;
-    --saffron: #f0a92e;
-    --saffron-dim: #b57d1e;
-    --red: #bf261f;
-    --white: #f2ede4;
-    --grey: #a99f8f;
-    --line: #2c251b;
-  }
-  * { margin: 0; padding: 0; box-sizing: border-box; }
-  html { scroll-behavior: smooth; }
-  body {
-    background: var(--ink);
-    color: var(--white);
-    font-family: 'Open Sans', 'Segoe UI', sans-serif;
-    font-size: 18px;
-    line-height: 1.55;
-    -webkit-font-smoothing: antialiased;
-  }
-  h1, h2, h3, .stamp { font-family: 'Black Ops One', 'Open Sans', sans-serif; font-weight: 400; letter-spacing: .04em; }
-  a { color: var(--saffron); text-decoration: none; }
-  img, video { display: block; max-width: 100%; }
-  section { scroll-margin-top: 72px; }
-
-  .tricolor { height: 6px; display: grid; grid-template-rows: 1fr 1fr 1fr; }
-  .tricolor span:nth-child(1) { background: var(--red); }
-  .tricolor span:nth-child(2) { background: #111; }
-  .tricolor span:nth-child(3) { background: var(--white); }
-
-  /* ---- nav ---- */
-  nav {
-    position: sticky; top: 0; z-index: 50;
-    display: flex; align-items: center; gap: 28px;
-    padding: 14px 28px;
-    background: rgba(14,12,9,.92);
-    backdrop-filter: blur(8px);
-    border-bottom: 1px solid var(--line);
-  }
-  nav .brand { font-family: 'Black Ops One', sans-serif; font-size: 15px; color: var(--white); letter-spacing: .08em; }
-  nav .brand em { color: var(--saffron); font-style: normal; }
-  nav .links { margin-left: auto; display: flex; gap: 22px; }
-  nav .links a { font-weight: 700; font-size: 14px; letter-spacing: .14em; color: var(--grey); text-transform: uppercase; }
-  nav .links a:hover { color: var(--saffron); }
-  @media (max-width: 700px) { nav .links a:nth-child(n+4) { display: none; } }
-
-  /* ---- hero ---- */
-  header.hero {
-    position: relative;
-    min-height: 92vh;
-    display: flex; flex-direction: column; justify-content: flex-end;
-    background:
-      linear-gradient(180deg, rgba(14,12,9,.35) 0%, rgba(14,12,9,.05) 45%, rgba(14,12,9,.92) 90%),
-      url('media/menu_backplate.png') center 30% / cover no-repeat;
-    image-rendering: pixelated;
-  }
-  .hero-inner { max-width: 1100px; margin: 0 auto; padding: 60px 28px 72px; width: 100%; text-align: center; }
-  .kicker {
-    font-weight: 700; letter-spacing: .38em; font-size: 13px; text-transform: uppercase;
-    color: var(--sand); opacity: .9;
-  }
-  .kicker b { color: var(--saffron); }
-  h1.title {
-    font-size: clamp(40px, 7.5vw, 96px);
-    line-height: .98;
-    margin: 18px 0 6px;
-    text-shadow: 0 4px 30px rgba(0,0,0,.75);
-  }
-  h1 .strike { color: var(--white); }
-  h1 .retrib { color: var(--saffron); display: block; font-size: .48em; letter-spacing: .3em; margin-top: 10px; }
-  .tagline { font-size: clamp(18px, 2.4vw, 26px); font-weight: 600; color: var(--sand); max-width: 720px; margin: 18px auto 8px; }
-  .subline { color: var(--grey); font-size: 16px; max-width: 640px; margin: 0 auto 34px; }
-  .cta-row { display: flex; gap: 16px; justify-content: center; flex-wrap: wrap; }
-  .btn {
-    display: inline-block; padding: 13px 30px;
-    font-family: 'Black Ops One'; font-size: 15px; letter-spacing: .1em; text-transform: uppercase;
-    border: 2px solid var(--saffron); color: var(--saffron);
-    transition: all .15s ease;
-  }
-  .btn:hover { background: var(--saffron); color: var(--ink); }
-  .btn.solid { background: var(--red); border-color: var(--red); color: var(--white); }
-  .btn.solid:hover { background: #d93a31; border-color: #d93a31; }
-  .platform { margin-top: 26px; font-size: 13px; letter-spacing: .22em; text-transform: uppercase; color: var(--grey); }
-
-  /* ---- sections ---- */
-  .wrap { max-width: 1100px; margin: 0 auto; padding: 84px 28px; }
-  .stamp {
-    display: inline-block; font-size: 13px; letter-spacing: .3em; text-transform: uppercase;
-    color: var(--ink); background: var(--saffron); padding: 4px 14px; margin-bottom: 18px;
-  }
-  h2 { font-size: clamp(28px, 4vw, 44px); margin-bottom: 10px; }
-  .lede { color: var(--grey); max-width: 760px; font-size: 19px; margin-bottom: 44px; }
-  .lede b { color: var(--sand); }
-
-  /* ---- cinematics ---- */
-  .film { background: var(--panel); border: 1px solid var(--line); }
-  .film video { width: 100%; aspect-ratio: 1920 / 1080; background: #000; }
-  .film .plate { padding: 16px 20px 18px; display: flex; align-items: baseline; gap: 14px; flex-wrap: wrap; }
-  .film .op { font-family: 'Black Ops One'; font-size: 17px; color: var(--saffron); letter-spacing: .06em; }
-  .film .season { font-size: 13px; font-weight: 700; letter-spacing: .24em; color: var(--red); text-transform: uppercase; }
-  .film .desc { flex-basis: 100%; color: var(--grey); font-size: 15.5px; }
-  .film-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 26px; }
-  @media (max-width: 860px) { .film-grid { grid-template-columns: 1fr; } }
-
-  /* ---- story beats ---- */
-  .beats { display: grid; gap: 20px; }
-  .beat { display: grid; grid-template-columns: 340px 1fr; gap: 0; background: var(--panel); border: 1px solid var(--line); overflow: hidden; align-items: stretch; }
-  .beat img { width: 100%; height: 100%; object-fit: cover; display: block; }
-  .beat .body { padding: 18px 24px 20px; }
-  .beat .season { font-size: 12px; font-weight: 700; letter-spacing: .26em; color: var(--red); text-transform: uppercase; }
-  .beat h3 { font-size: 20px; color: var(--white); margin: 4px 0 8px; }
-  .beat h3 em { color: var(--saffron); font-style: normal; }
-  .beat p { color: var(--grey); font-size: 15.5px; }
-  .beat p b { color: var(--sand); }
-  @media (max-width: 820px) { .beat { grid-template-columns: 1fr; } .beat img { aspect-ratio: 16 / 8; } }
-
-  /* ---- campaigns ---- */
-  .camp-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 26px; }
-  @media (max-width: 860px) { .camp-grid { grid-template-columns: 1fr; } }
-  .camp { background: var(--panel); border: 1px solid var(--line); overflow: hidden; }
-  .camp img { aspect-ratio: 1920 / 991; object-fit: cover; width: 100%; filter: saturate(1.05); transition: transform .3s ease; }
-  .camp:hover img { transform: scale(1.025); }
-  .camp .body { padding: 18px 20px 22px; }
-  .camp h3 { font-size: 20px; color: var(--white); margin-bottom: 2px; }
-  .camp h3 span { color: var(--saffron); }
-  .camp .season { font-size: 12px; font-weight: 700; letter-spacing: .26em; color: var(--red); text-transform: uppercase; }
-  .camp p { color: var(--grey); font-size: 15.5px; margin-top: 8px; }
-
-  /* ---- features ---- */
-  .feat-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; }
-  @media (max-width: 1080px) { .feat-grid { grid-template-columns: repeat(3, 1fr); } }
-  @media (max-width: 960px) { .feat-grid { grid-template-columns: 1fr 1fr; } }
-  @media (max-width: 640px) { .feat-grid { grid-template-columns: 1fr; } }
-  .feat { background: var(--panel-2); border: 1px solid var(--line); border-top: 3px solid var(--saffron-dim); overflow: hidden; }
-  .feat img { width: 100%; aspect-ratio: 16 / 9; object-fit: cover; display: block; }
-  .feat .body { padding: 16px 18px 22px; }
-  .feat h3 { font-size: 17px; color: var(--saffron); margin-bottom: 8px; }
-  .feat p { color: var(--grey); font-size: 15.5px; }
-  .feat p b { color: var(--sand); }
-
-  /* ---- gun camera ---- */
-  .boom-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; }
-  @media (max-width: 860px) { .boom-grid { grid-template-columns: 1fr; } }
-  .boom-grid a { position: relative; display: block; overflow: hidden; border: 1px solid var(--line); border-bottom: 3px solid var(--red); }
-  .boom-grid img { aspect-ratio: 1920 / 1080; object-fit: cover; width: 100%; transition: transform .3s ease; }
-  .boom-grid a:hover img { transform: scale(1.04); }
-  .boom-grid .cap {
-    position: absolute; inset: auto 0 0 0; padding: 26px 14px 10px;
-    background: linear-gradient(180deg, transparent, rgba(14,12,9,.92));
-    font-size: 12px; font-weight: 700; letter-spacing: .18em; text-transform: uppercase; color: var(--sand);
-  }
-
-  /* ---- the bird ---- */
-  .bird-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; }
-  @media (max-width: 860px) { .bird-grid { grid-template-columns: 1fr; } }
-  .bird-grid a { position: relative; display: block; overflow: hidden; border: 1px solid var(--line); border-bottom: 3px solid var(--saffron-dim); }
-  .bird-grid img { aspect-ratio: 1920 / 1080; object-fit: cover; width: 100%; transition: transform .3s ease; }
-  .bird-grid a:hover img { transform: scale(1.04); }
-  .bird-grid .cap {
-    position: absolute; inset: auto 0 0 0; padding: 26px 14px 10px;
-    background: linear-gradient(180deg, transparent, rgba(14,12,9,.92));
-    font-size: 12px; font-weight: 700; letter-spacing: .18em; text-transform: uppercase; color: var(--sand);
-  }
-
-  /* ---- gallery ---- */
-  .shots { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; }
-  @media (max-width: 860px) { .shots { grid-template-columns: 1fr 1fr; } }
-  .shots a { position: relative; display: block; overflow: hidden; border: 1px solid var(--line); }
-  .shots img { aspect-ratio: 1920 / 991; object-fit: cover; width: 100%; transition: transform .3s ease; }
-  .shots a:hover img { transform: scale(1.04); }
-  .shots .cap {
-    position: absolute; inset: auto 0 0 0; padding: 26px 12px 10px;
-    background: linear-gradient(180deg, transparent, rgba(14,12,9,.9));
-    font-size: 12px; font-weight: 700; letter-spacing: .18em; text-transform: uppercase; color: var(--sand);
-  }
-
-  /* ---- outro / footer ---- */
-  .creed { text-align: center; padding: 90px 28px; background: var(--panel); border-top: 1px solid var(--line); }
-  .creed h2 { color: var(--white); }
-  .creed h2 em { color: var(--saffron); font-style: normal; }
-  .creed p { color: var(--grey); max-width: 620px; margin: 14px auto 0; }
-  footer { padding: 40px 28px 52px; text-align: center; color: var(--grey); font-size: 14px; border-top: 1px solid var(--line); }
-  footer .df { font-family: 'Black Ops One'; letter-spacing: .18em; font-size: 15px; color: var(--sand); margin-bottom: 10px; }
-  footer .df b { color: var(--saffron); }
-  footer p { max-width: 720px; margin: 6px auto; }
-</style>
 </head>
 <body>
 
 <nav>
-  <span class="brand">PERSIAN STRIKE: <em>RETRIBUTION</em></span>
+  <a class="brand" href="index.html">PERSIAN STRIKE: <em>RETRIBUTION</em></a>
   <span class="links">
-    <a href="#cinematics">Cinematics</a>
-    <a href="#story">Story</a>
-    <a href="#campaigns">Campaigns</a>
-    <a href="#bird">The Bird</a>
-    <a href="#war">The War</a>
-    <a href="#action">Gun Camera</a>
-    <a href="#gallery">Gallery</a>
+    <a href="index.html" class="active">Home</a>
+    <a href="c1.html">Tondbad</a>
+    <a href="c2.html">Tangeh</a>
+    <a href="c3.html">Shahin</a>
+    <a href="c4.html">Azadi</a>
   </span>
 </nav>
 
@@ -292,66 +62,13 @@
     <h1 class="title"><span class="strike">PERSIAN STRIKE</span><span class="retrib">RETRIBUTION</span></h1>
     <p class="subline">A rotary-wing strike war in the 16-bit tradition, crossed with a base you found, feed, and defend — flown from one cockpit.</p>
     <div class="cta-row">
-      <a class="btn solid" href="#cinematics">Watch the cinematics</a>
+      <a class="btn solid" href="#story">The story</a>
       <a class="btn" href="#campaigns">The four campaigns</a>
     </div>
     <div class="platform">Coming soon to Windows PC</div>
   </div>
   <div class="tricolor"><span></span><span></span><span></span></div>
 </header>
-
-<section id="cinematics">
-  <div class="wrap">
-    <span class="stamp">Opening cinematics</span>
-    <h2>Four campaigns. Four cold opens.</h2>
-    <p class="lede">Every campaign begins in-engine, in real weather, on the real map you are about to fight over. These are the actual opening cutscenes — <b>captured from the game, not rendered for the trailer.</b></p>
-
-    <div class="film-grid">
-      <div class="film">
-        <video controls preload="none" poster="media/still_c1_simorgh.jpg">
-          <source src="media/c1_tondbad_opening.mp4" type="video/mp4">
-        </video>
-        <div class="plate">
-          <span class="op">OPERATION TONDBAD</span>
-          <span class="season">Spring · Campaign I</span>
-          <span class="desc">Spring, high noon, the Gulf of Simorgh. The day the squadron stopped taking orders — one battleship, one gunship, and every mixtape they could carry.</span>
-        </div>
-      </div>
-      <div class="film">
-        <video controls preload="none" poster="media/still_c2_bandar.jpg">
-          <source src="media/c2_tangeh_opening.mp4" type="video/mp4">
-        </video>
-        <div class="plate">
-          <span class="op">OPERATION TANGEH</span>
-          <span class="season">Summer · Campaign II</span>
-          <span class="desc">Tangeh-ye Hormoz — the strait — under a gulf thunderstorm. Bandar-e Azadi holds the east shore; the Marshal holds the west. One causeway between them.</span>
-        </div>
-      </div>
-      <div class="film">
-        <video controls preload="none" poster="media/still_c3_airhead.jpg">
-          <source src="media/c3_shahin_opening.mp4" type="video/mp4">
-        </video>
-        <div class="plate">
-          <span class="op">OPERATION SHAHIN</span>
-          <span class="season">Autumn · Campaign III</span>
-          <span class="desc">Autumn on the Caspian front. Fog in the valleys, a relay war in the air, and the words nobody wanted to say out loud: world war.</span>
-        </div>
-      </div>
-      <div class="film">
-        <video controls preload="none" poster="media/still_c4_megabase.jpg">
-          <source src="media/c4_azadi_opening.mp4" type="video/mp4">
-        </video>
-        <div class="plate">
-          <span class="op">OPERATION AZADI</span>
-          <span class="season">Winter · Campaign IV · Three winters later</span>
-          <span class="desc">The free government of Parsava masses on the Daryush rim. Under the snow, the Marshal's last war machine starts a launch clock.</span>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<div class="tricolor"><span></span><span></span><span></span></div>
 
 <section id="story">
   <div class="wrap">
@@ -365,6 +82,7 @@
           <span class="season">Spring — Operation Tondbad</span>
           <h3>THE <em>MUTINY</em></h3>
           <p>High noon in the Gulf of Simorgh: the admiral walks the plank, the Simorgh runs up the tricolor, and the squadron raises a beachhead on the regime's own coast — block by block, under a sky full of dust. By spring's end, <b>the coast is ours.</b></p>
+          <a class="go" href="c1.html">Campaign I — Operation Tondbad →</a>
         </div>
       </div>
       <div class="beat">
@@ -373,6 +91,7 @@
           <span class="season">Summer — Operation Tangeh</span>
           <h3>THE <em>STRAIT</em></h3>
           <p>The Marshal and his foreign backers close Tangeh-ye Hormoz, and Bandar-e Azadi holds out on rations and salvage. Carry the revolution port by port, break open the Zendan, and get the enriched material out without turning the coast to glass. <b>The strait opens.</b></p>
+          <a class="go" href="c2.html">Campaign II — Operation Tangeh →</a>
         </div>
       </div>
       <div class="beat">
@@ -381,6 +100,7 @@
           <span class="season">Autumn — Operation Shahin</span>
           <h3>WORLD <em>WAR</em></h3>
           <p>The reformed USSR and Pyongyang pick their side, and the word nobody wanted finally gets said out loud. On the Caspian front the relay war decides who owns the sky while an armored train prowls the coastal rails. Then the snow starts falling — <b>and doesn't stop for three winters.</b></p>
+          <a class="go" href="c3.html">Campaign III — Operation Shahin →</a>
         </div>
       </div>
       <div class="beat">
@@ -389,50 +109,57 @@
           <span class="season">Winter — Operation Azadi · Three winters later</span>
           <h3>FIRST <em>LIGHT</em></h3>
           <p>Three years on, the Azadi movement <b>is</b> the government of Parsava — and al-Ghazi has wrapped the old capital in a war machine that fights on without him. Four contingents. One wall. Twenty-two minutes on the silo clock. At first light: <b>Parsava is free.</b></p>
+          <a class="go" href="c4.html">Campaign IV — Operation Azadi →</a>
         </div>
       </div>
     </div>
   </div>
 </section>
 
+<div class="tricolor"><span></span><span></span><span></span></div>
+
 <section id="campaigns">
   <div class="wrap">
     <span class="stamp">One seasonal war</span>
     <h2>Four campaigns, four seasons, one country.</h2>
-    <p class="lede">Every operation has its own aircraft, weather, economy, soundtrack, and front line. Spring to winter — the coast, the strait, the north, and the last push on the capital.</p>
+    <p class="lede">Every operation has its own aircraft, weather, economy, soundtrack, and front line — and its own page, with the full opening cinematic captured in-engine.</p>
     <div class="camp-grid">
-      <div class="camp">
+      <a class="camp" href="c1.html">
         <img src="media/still_c1_colors.jpg" alt="The rebel tricolor raised over the battleship rail, the gulf coast beyond" loading="lazy">
         <div class="body">
           <span class="season">Spring — the coast</span>
           <h3>OPERATION <span>TONDBAD</span></h3>
           <p>Defect, survive, and raise a beachhead from the first winched crate. Toofan-e shen dust walls march on the live wind while workers stack your base block by block.</p>
+          <span class="go">Enter the campaign →</span>
         </div>
-      </div>
-      <div class="camp">
+      </a>
+      <a class="camp" href="c2.html">
         <img src="media/still_c2_paygah.jpg" alt="PAYGAH, the regime's walled west-shore stronghold, under gulf rain" loading="lazy">
         <div class="body">
           <span class="season">Summer — the strait</span>
           <h3>OPERATION <span>TANGEH</span></h3>
           <p>Two armies, one causeway, and a tide that opens and closes the war. Thunderheads roll in off the gulf and the drone swarm hunts anything that moves.</p>
+          <span class="go">Enter the campaign →</span>
         </div>
-      </div>
-      <div class="camp">
+      </a>
+      <a class="camp" href="c3.html">
         <img src="media/still_c3_port.jpg" alt="A fog-drowned northern port at dusk" loading="lazy">
         <div class="body">
           <span class="season">Autumn — the north</span>
           <h3>OPERATION <span>SHAHIN</span></h3>
           <p>Copper forest, fog seas, a battle train on the coast line. Fight the relay war for the northern sky while the stronghold holds — or doesn't — behind you.</p>
+          <span class="go">Enter the campaign →</span>
         </div>
-      </div>
-      <div class="camp">
+      </a>
+      <a class="camp" href="c4.html">
         <img src="media/still_c4_khoshgeleh.jpg" alt="The Khoshgeleh waiting on the red-cross pad at the Azadi stronghold" loading="lazy">
         <div class="body">
           <span class="season">Winter — three winters later</span>
           <h3>OPERATION <span>AZADI</span></h3>
           <p>The Marshal wrapped the old capital in his last war machine. Four coalition contingents, a ground blizzard, and a launch clock already running. Break the swarm, kill the cores, free Persia.</p>
+          <span class="go">Enter the campaign →</span>
         </div>
-      </div>
+      </a>
     </div>
   </div>
 </section>
@@ -446,10 +173,11 @@
       <a href="media/bird_lowpass.jpg" target="_blank" rel="noopener"><img src="media/bird_lowpass.jpg" alt="The gunship silhouetted in a low pass over sunset water" loading="lazy"><span class="cap">Low pass at last light</span></a>
       <a href="media/bird_attack.jpg" target="_blank" rel="noopener"><img src="media/bird_attack.jpg" alt="Close underside view of the gunship on an attack run, gun lit, rockets underwing" loading="lazy"><span class="cap">Attack run — gun hot</span></a>
       <a href="media/bird_winch.jpg" target="_blank" rel="noopener"><img src="media/bird_winch.jpg" alt="The gunship hovering with a crate on the winch line over the gulf" loading="lazy"><span class="cap">Sling load inbound</span></a>
-      <a href="media/bird_darkpad.jpg" target="_blank" rel="noopener"><img src="media/bird_darkpad.jpg" alt="The gunship passing overhead against snowfall at dusk" loading="lazy"><span class="cap">Overhead, in the snow — the last one</span></a>
     </div>
   </div>
 </section>
+
+<div class="tricolor"><span></span><span></span><span></span></div>
 
 <section id="war">
   <div class="wrap">
@@ -486,6 +214,13 @@
         </div>
       </div>
       <div class="feat">
+        <img src="media/action_demolition.jpg" alt="Two Bandargah buildings caught mid-collapse, blocks airborne, drones crossing overhead" loading="lazy">
+        <div class="body">
+          <h3>DESTRUCTIBLE ENVIRONMENTS</h3>
+          <p>Every building, bridge, ship, and tower breaks for real — and the regime hides caches and stay-behind guns in the rubble. <b>Demolition is a gamble worth taking.</b></p>
+        </div>
+      </div>
+      <div class="feat">
         <img src="media/tile_livingwar.jpg" alt="The Bandar wall battery at dusk, drone swarm overhead and incoming fire streaking in" loading="lazy">
         <div class="body">
           <h3>THE LIVING WAR</h3>
@@ -506,38 +241,6 @@
           <p>The soundtrack is smuggled in crate by crate — banned music for a banned squadron. Choose your tunes. Fly the mission. Bring the tape home.</p>
         </div>
       </div>
-    </div>
-  </div>
-</section>
-
-<div class="tricolor"><span></span><span></span><span></span></div>
-
-<section id="action">
-  <div class="wrap">
-    <span class="stamp">Gun camera</span>
-    <h2>Destructible environments.</h2>
-    <p class="lede">Every building, bridge, ship, and tower in Parsava breaks for real — and the regime hides caches and stay-behind guns in the rubble. <b>Demolition is a gamble worth taking.</b> Frames pulled straight from the reels.</p>
-    <div class="boom-grid">
-      <a href="media/action_c1_salvo.jpg" target="_blank" rel="noopener"><img src="media/action_c1_salvo.jpg" alt="The battleship Simorgh firing a broadside, sharks circling in the blood pool" loading="lazy"><span class="cap">The Simorgh opens fire</span></a>
-      <a href="media/action_c2_impact.jpg" target="_blank" rel="noopener"><img src="media/action_c2_impact.jpg" alt="A container freighter exploding in the strait, cargo thrown skyward" loading="lazy"><span class="cap">A freighter comes apart in the strait</span></a>
-      <a href="media/action_demolition.jpg" target="_blank" rel="noopener"><img src="media/action_demolition.jpg" alt="Two Bandargah buildings caught mid-collapse, blocks airborne, drones crossing overhead" loading="lazy"><span class="cap">A Bandargah block comes down</span></a>
-      <a href="media/action_c4_silo.jpg" target="_blank" rel="noopener"><img src="media/action_c4_silo.jpg" alt="The final warhead in its silo under a red 22-minute launch clock" loading="lazy"><span class="cap">The last warhead — 22:00 on the clock</span></a>
-    </div>
-  </div>
-</section>
-
-<section id="gallery">
-  <div class="wrap">
-    <span class="stamp">From the flight recorder</span>
-    <h2>In-engine. In-weather. In trouble.</h2>
-    <p class="lede">Direct captures from campaign cinematics and vantage flights. Click any frame for the full image.</p>
-    <div class="shots">
-      <a href="media/still_c1_departure.jpg" target="_blank" rel="noopener"><img src="media/still_c1_departure.jpg" alt="Deck crew at a board game under a lamp in the rain, the Simorgh beyond" loading="lazy"><span class="cap">Last game before departure</span></a>
-      <a href="media/still_c2_closed.jpg" target="_blank" rel="noopener"><img src="media/still_c2_closed.jpg" alt="The east shore of the strait under rain, shipping stopped" loading="lazy"><span class="cap">Tangeh basteh ast — the strait is closed</span></a>
-      <a href="media/still_c1_span.jpg" target="_blank" rel="noopener"><img src="media/still_c1_span.jpg" alt="The gunship over the Rud-e Kavir span" loading="lazy"><span class="cap">The span over Rud-e Kavir</span></a>
-      <a href="media/still_c1_rubble.jpg" target="_blank" rel="noopener"><img src="media/still_c1_rubble.jpg" alt="A town block reduced to rubble, contacts on the radar" loading="lazy"><span class="cap">Rubble where the garrison stood</span></a>
-      <a href="media/still_c3_train.jpg" target="_blank" rel="noopener"><img src="media/still_c3_train.jpg" alt="The armored battle train looming out of Caspian fog, headlamp burning" loading="lazy"><span class="cap">The battle train, 0510</span></a>
-      <a href="media/still_c4_firstlight.jpg" target="_blank" rel="noopener"><img src="media/still_c4_firstlight.jpg" alt="The gunship at first light" loading="lazy"><span class="cap">First light</span></a>
     </div>
   </div>
 </section>
