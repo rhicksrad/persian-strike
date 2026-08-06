@@ -4,7 +4,7 @@
         xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
   <url>
     <loc>https://persianstrike.com/</loc>
-    <lastmod>2026-07-23</lastmod>
+    <lastmod>2026-08-05</lastmod>
     <changefreq>weekly</changefreq>
     <image:image>
       <image:loc>https://persianstrike.com/media/menu_backplate.png</image:loc>
@@ -12,12 +12,12 @@
   </url>
   <url>
     <loc>https://persianstrike.com/about.html</loc>
-    <lastmod>2026-07-23</lastmod>
+    <lastmod>2026-08-05</lastmod>
     <changefreq>yearly</changefreq>
   </url>
   <url>
     <loc>https://persianstrike.com/c1.html</loc>
-    <lastmod>2026-07-23</lastmod>
+    <lastmod>2026-08-05</lastmod>
     <changefreq>monthly</changefreq>
     <video:video>
       <video:thumbnail_loc>https://persianstrike.com/media/still_c1_simorgh.jpg</video:thumbnail_loc>
@@ -30,7 +30,7 @@
   </url>
   <url>
     <loc>https://persianstrike.com/c2.html</loc>
-    <lastmod>2026-07-23</lastmod>
+    <lastmod>2026-08-05</lastmod>
     <changefreq>monthly</changefreq>
     <video:video>
       <video:thumbnail_loc>https://persianstrike.com/media/still_c2_bandar.jpg</video:thumbnail_loc>
@@ -43,7 +43,7 @@
   </url>
   <url>
     <loc>https://persianstrike.com/c3.html</loc>
-    <lastmod>2026-07-23</lastmod>
+    <lastmod>2026-08-05</lastmod>
     <changefreq>monthly</changefreq>
     <video:video>
       <video:thumbnail_loc>https://persianstrike.com/media/still_c3_airhead.jpg</video:thumbnail_loc>
@@ -56,7 +56,7 @@
   </url>
   <url>
     <loc>https://persianstrike.com/c4.html</loc>
-    <lastmod>2026-07-23</lastmod>
+    <lastmod>2026-08-05</lastmod>
     <changefreq>monthly</changefreq>
     <video:video>
       <video:thumbnail_loc>https://persianstrike.com/media/still_c4_megabase.jpg</video:thumbnail_loc>

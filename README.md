@@ -9,5 +9,7 @@ Live site: https://persianstrike.com/
 - In-engine campaign stills
 - Built with the Godot Engine · assets CC0 or original
 
-The game itself is in active development and not yet released. All names, places,
-factions, and events are fictional.
+The game is out now in early access for Windows PC:
+https://reformatgames.itch.io/persian-strike-retribution
+
+All names, places, factions, and events are fictional.
