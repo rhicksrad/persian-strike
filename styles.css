@@ -187,3 +187,20 @@ footer { padding: 40px 28px 52px; text-align: center; color: var(--grey); font-s
 footer .df { font-family: 'Black Ops One', sans-serif; letter-spacing: .18em; font-size: 15px; color: var(--sand); margin-bottom: 10px; }
 footer .df b { color: var(--saffron); }
 footer p { max-width: 720px; margin: 6px auto; }
+
+/* ---- war book: numbered operation cards ---- */
+.ops { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; }
+@media (max-width: 960px) { .ops { grid-template-columns: 1fr 1fr; } }
+@media (max-width: 640px) { .ops { grid-template-columns: 1fr; } }
+.op-card {
+  position: relative;
+  background: var(--panel-2); border: 1px solid var(--line); border-left: 3px solid var(--red);
+  padding: 18px 20px 20px;
+}
+.op-card .num {
+  font-family: 'Black Ops One', sans-serif; font-size: 13px; letter-spacing: .18em;
+  color: var(--saffron-dim);
+}
+.op-card h3 { font-size: 17px; color: var(--saffron); margin: 2px 0 8px; }
+.op-card p { color: var(--grey); font-size: 15.5px; }
+.op-card p b { color: var(--sand); }
