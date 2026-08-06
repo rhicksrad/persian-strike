@@ -53,7 +53,17 @@ nav .links a:hover { color: var(--saffron); }
 nav .links a.active { color: var(--saffron); }
 nav .links a.buy { color: var(--ink); background: var(--saffron); padding: 5px 13px 6px; }
 nav .links a.buy:hover { background: #ffc14d; color: var(--ink); }
-@media (max-width: 700px) { nav .links { gap: 14px; } nav .links a { font-size: 12px; letter-spacing: .08em; } }
+/* Phones: the brand plus seven links cannot share one row — they used to
+   spill off the right edge (the bar read "HOME TONDBAD TANGEH S") and drag
+   the whole page sideways. Wrap to two rows and centre both. */
+@media (max-width: 700px) {
+  nav { flex-wrap: wrap; justify-content: center; gap: 8px; padding: 10px 16px; }
+  nav .brand { flex: 1 0 100%; text-align: center; font-size: 14px; }
+  nav .links { margin-left: 0; width: 100%; flex-wrap: wrap; justify-content: center; gap: 4px 16px; }
+  /* 12px type needs the padding to reach a thumb-sized target */
+  nav .links a { font-size: 12px; letter-spacing: .08em; padding: 7px 2px; }
+  nav .links a.buy { padding: 7px 14px; }
+}
 
 /* ---- main hero: title plate on solid ink, the key art below it, clean ---- */
 header.hero { background: var(--ink); }
@@ -96,6 +106,14 @@ header.page-hero { background: var(--panel); }
 /* ---- sections ---- */
 .wrap { max-width: 1100px; margin: 0 auto; padding: 84px 28px; }
 .wrap.tight { padding: 56px 28px; }
+/* Desktop's 84px gutters make a phone scroll through a lot of empty ink;
+   tighten the rhythm and reclaim the side margins for the text itself. */
+@media (max-width: 700px) {
+  .wrap { padding: 52px 18px; }
+  .wrap.tight { padding: 36px 18px; }
+  .hero-inner { padding: 40px 18px 32px; }
+  .page-hero-inner { padding: 40px 18px 28px; }
+}
 .stamp {
   display: inline-block; font-size: 13px; letter-spacing: .3em; text-transform: uppercase;
   color: var(--ink); background: var(--saffron); padding: 4px 14px; margin-bottom: 18px;
