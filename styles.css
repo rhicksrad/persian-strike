@@ -215,6 +215,11 @@ footer p { max-width: 720px; margin: 6px auto; }
   background: var(--panel-2); border: 1px solid var(--line); border-left: 3px solid var(--red);
   padding: 18px 20px 20px;
 }
+.op-card img {
+  display: block; width: calc(100% + 40px); margin: -18px -20px 14px;
+  aspect-ratio: 16 / 9; object-fit: cover;
+  border-bottom: 1px solid var(--line);
+}
 .op-card .num {
   font-family: 'Black Ops One', sans-serif; font-size: 13px; letter-spacing: .18em;
   color: var(--saffron-dim);
