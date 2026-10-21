@@ -22,26 +22,15 @@ tiles, approved and deployed earlier today.
 - The Tangeh opening was re-filmed at 1080p on build 88735757
   (`media/c2_tangeh_opening.mp4`).
 
-## Left for the next account
-1. Replace the remaining old images. Most `still_*`, `op_c*`, `beat_*`, `tile_*`
-   and `bird_*` files are August captures, and several show the HUD or subtitles.
-   All C3 and C4 stills are primitive-era and must go. Shoot with the promo runner
-   on merge 12 (0001b6ea) or later: `main_dev.tscn -- --promo|--promo2|--promo3|--promo4`.
-   Frames land in `.dev/promo/`. The C3 promo coordinates predate the C3 redesign,
-   so check them.
-2. Re-film the C1, C3 and C4 openings on 0001b6ea or later. The flags are
-   `--mutiny-shot` (C1, includes the shark breach), `--frontline-shot` (C3) and
-   `--azadi-shot` (C4), each with `--film-quit=<s>`, `--write-movie`,
-   `--fixed-fps 60`, and an `override.cfg` that sets the viewport to 1920x1080.
-   The movie includes the loading screen, so trim to the first scene frame, then
-   encode H.264/AAC with faststart and keep the audio. On Dark Helmet a 40 s film
-   takes about 45 min. Run one Godot at a time under `/tmp/dh-godot.lock` and
-   source `~/.local/nvidia-595/env.sh` first.
-3. Add a shark tile from the merge 12 build. Pick the breach or the fin cruise,
-   not the bite: the blood still has hard edges.
-4. Take the full-page preview screenshots (desktop and phone), attach them in the
-   project thread for Ryan, and deploy only after his OK. Then verify the live
-   pages and the raw-URL videos.
+## Finished 2026-10-21 (second pass)
+- Every page image is now a current capture: C1/C2/C3 stills from the Oct 17-18 promo
+  passes (`.dev/promo/`), C4 stills from a fresh `--promo4` pass, and the rest from the
+  Trailer 2 source takes (`~/Videos/promo/trailer2/*/shot.mov`). New files are `media/v4_*.jpg`.
+- The C1, C3 and C4 openings were re-filmed on dotnet-port-wip ff00cff6 (1600x900, the
+  reel flags force that window), trimmed to the first scene frame, H.264/AAC faststart.
+  C1 now includes the shark breach; `v4_shark.jpg` is a new "New in the war" tile.
+- Left: preview screenshots go to Ryan; deploy (merge to main) only after his OK, then
+  verify the live pages and the raw-URL videos.
 
 Rules: real current-build captures only, no text-overlay images, keep the fiction
 disclaimer, no real place names, no Islamic-state assumptions, realistic not gamey.

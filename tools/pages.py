@@ -63,6 +63,7 @@ split("f_demolition", "Destructible", "Everything important breaks", ["Every bui
     ("new_rain", "Weather", "Rain on the strait", "Rain now falls at raindrop scale, streaking past the bridge cables and across the open water of the strait."),
     ("new_laser", "Operation Tangeh", "The datacenter laser", "Bring the datacenter online and the gunship's laser picks incoming hunter drones out of the dusk on its own."),
     ("new_beards", "People", "Faces of the coast", "A new generation of characters with real beards, moustaches and working headgear: the dock hands, drivers and crews of the Parsava coast."),
+    ("new_shark", "Operation Tondbad", "Sharks in the gulf", "The Tondbad opening now ends below the Simorgh's rail, where the gulf's great whites take the vote on whoever walks the plank."),
 ], "g3"), cls="alt", sid="new")}
 
 {closer("Out now in early access.", "Four campaigns and one continuous war, with every wall in it flown in under your rotors. Start with the free Operation Tondbad demo, and the war grows with every update.")}
@@ -75,7 +76,7 @@ page("index.html", "PERSIAN STRIKE: RETRIBUTION — a helicopter war from Reform
 c1 = campaign_head("Campaign I · Spring", "Operation <span style='color:var(--signal)'>Tondbad</span>",
     "The day the squadron stopped taking orders.", "c1_hero",
     [("Season", "Spring"), ("Theater", "The Parsava coast"), ("Home plate", "The Simorgh"), ("War book", "Nine operations")]) + f"""
-{block(head("The cold open", "High noon, the Gulf of Simorgh.", "The actual opening cinematic, captured from the game.") + film("c1_tondbad_opening.mp4", "c1_poster", "Operation Tondbad", "Spring · Campaign I", "The admiral walks the plank, the sharks take the vote, and one battleship, one gunship and every mixtape aboard go to war with the regime that trained them."))}
+{block(head("The cold open", "Sundown, the Gulf of Simorgh.", "The actual opening cinematic, captured from the game.") + film("c1_tondbad_opening.mp4", "c1_poster", "Operation Tondbad", "Spring · Campaign I", "The admiral walks the plank, the sharks take the vote, and one battleship, one gunship and every mixtape aboard go to war with the regime that trained them."))}
 
 {block(head("Step one", "You don't get a base. You fly one in.", "Dead abeam the Simorgh's anchorage stands a regime installation the war already chewed through. Everything it will become rides the battleship's deck.") +
 split("c1_deck", "Ferry the crew", "Six souls, six seats", ["Land on the Simorgh's pad and the builders run to the skids. Land on the claim and they jump out onto the sand, ready to work."]) +
@@ -174,8 +175,8 @@ split("c3_airhead", "Searchlights", "Every beam is a tripwire", ["Each searchlig
 {block(head("The north", "A different country.", "") + '''<p class="lede">Slate-teal Caspian water and an olive sediment shelf. A seawall town, an open public beach, marsh walks, a working rice plain and rail industries, all of them living places before the war reaches them. Copper Hyrcanian forest climbs toward the Alborz snowline, and the weather moves from rain to mist to sleet to snow.</p>''', cls="alt")}
 
 {block(head("From the flight recorder", "Autumn, on film.") + gallery([
-    ("c3_train", "The battle train in the fog", "wide"), ("new_stealth", "Cloaked over the paddies", "wide"),
-    ("c3_port", "The Caspian harbor", ""), ("c3_airhead", "The airhead at dawn", ""), ("c3_darkpad", "Overhead, in the first snow", ""),
+    ("c3_train", "The Shahin rail yard under searchlights", "wide"), ("new_stealth", "Cloaked over the paddies", "wide"),
+    ("c3_port", "The Caspian harbor", ""), ("c3_airhead", "A searchlight pad on the plain", ""), ("c3_darkpad", "Overhead, in the autumn sky", ""),
 ]))}
 {pager(("c2.html", "Operation Tangeh"), ("c4.html", "Operation Azadi"))}
 """

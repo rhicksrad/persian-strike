@@ -36,16 +36,16 @@
   "The gunship coming out of the fog over autumn forest and flooded paddies"
  ],
  "camp_c4": [
-  "still_c4_khoshgeleh.jpg",
-  "The Khoshgeleh rising over the snowbound capital war machine"
+  "v4_c4_core.jpg",
+  "The old capital under snow, a mosque beside the highway and a repair core in the square"
  ],
  "f_cockpit": [
   "v3_liftoff.jpg",
   "The gunship lifting off the battleship's pad as a second bird waits on deck"
  ],
  "f_blocks": [
-  "tile_blocks_v2.jpg",
-  "Block tarps rigged on the Simorgh's stern cargo yard, ready for the sling"
+  "v4_winch.jpg",
+  "The gunship hovering over the Simorgh's stern at sunset, a load on the winch line"
  ],
  "f_weather": [
   "v3_fog.jpg",
@@ -88,80 +88,80 @@
   "The gunship passing over the battleship and the coastal city at sunrise"
  ],
  "c1_poster": [
-  "v3_battleship.jpg",
-  "The battleship Simorgh at anchor off the coast at sunrise"
+  "v4_c1_poster.jpg",
+  "A sailor walking the plank off the Simorgh at sunset"
  ],
  "c1_deck": [
   "v3_liftoff.jpg",
   "The gunship lifting off the battleship's pad as a second bird waits on deck"
  ],
  "c1_beachhead": [
-  "still_c1_beachhead.jpg",
-  "The restored beachhead: helipad, walls, watchtowers and hardstand beside the surf"
+  "v4_beachhead_pad.jpg",
+  "Gunships parked on the beachhead pad at dawn, the port cranes and flags beyond the rail"
  ],
  "op_c1_01": [
-  "op_c1_01.jpg",
+  "v4_c1_radar.jpg",
   "The early-warning radar site: dome tower, masts and gun cover inside the wire"
  ],
  "op_c1_02": [
-  "op_c1_02.jpg",
+  "v4_c1_power.jpg",
   "The oil-fired power station: turbine hall, twin stacks and fuel tanks"
  ],
  "op_c1_03": [
-  "op_c1_03.jpg",
-  "A SAM battery on its pad, launcher trained, town skyline beyond"
+  "v4_c1_sam.jpg",
+  "The SAM site in the dry scrub, the town skyline beyond"
  ],
  "op_c1_04": [
-  "op_c1_04.jpg",
-  "The regime airstrip with Hinds fueled on the apron"
+  "v4_c1_airstrip.jpg",
+  "The regime airstrip: runway, apron, hangars and floodlight masts"
  ],
  "op_c1_05": [
-  "op_c1_05.jpg",
-  "The POW pen: locked tents inside the wire, searchlight towers sweeping"
+  "v4_c1_pen.jpg",
+  "The POW pen: tents inside the wire beside the hangars, watchtowers on the corners"
  ],
  "op_c1_06": [
-  "op_c1_06.jpg",
-  "The Legation quarter behind its walls"
+  "v4_c1_embassy.jpg",
+  "The Legation compound inside its white walls, the resort coast behind it"
  ],
  "op_c1_07": [
-  "op_c1_07.jpg",
-  "Forward Command on the southern ridge"
+  "v4_c1_hq.jpg",
+  "Forward Command: the Marshal's gold-striped headquarters among palms and fuel tanks"
  ],
  "op_c1_08": [
-  "op_c1_08.jpg",
-  "The command tower up close"
+  "v4_c1_hq_tower.jpg",
+  "The Marshal's headquarters block up close"
  ],
  "op_c1_09": [
-  "op_c1_09.jpg",
-  "The aircraft boneyard: derelict hulks on the sand"
+  "v4_c1_boneyard.jpg",
+  "The boneyard hangar beyond a palm grove and the river"
  ],
  "c1_pars": [
-  "still_c1_pars.jpg",
-  "The Pars industrial complex: derricks, pumpjacks, a gathering manifold and the tank farm beyond"
+  "v4_c1_oilfield.jpg",
+  "The Pars oil field: derricks and pump houses inside the perimeter fence"
  ],
  "c1_airfield": [
-  "still_c1_airfield.jpg",
-  "The regime airstrip, aircraft boneyard and the civil airport sharing one perimeter"
+  "v4_c1_airport.jpg",
+  "The civil airport terminal and hangars beside the river falls"
  ],
  "c1_oldroad": [
-  "still_c1_oldroad.jpg",
-  "The fire temple on its tell across the old road from the caravanserai"
+  "v4_c1_caravanserai.jpg",
+  "The domed shrine and the caravanserai across the old road, the ship-breaking beach beyond"
  ],
  "c1_qanat": [
-  "still_c1_qanat.jpg",
-  "The qanat shaft line running down from the foothills toward the farm belt"
+  "v4_c1_qanat.jpg",
+  "The foothills above the farm belt where the qanat line runs down"
  ],
  "c1_town": [
-  "still_c1_town.jpg",
-  "A coastal town of hand-placed homes along the authored road grid"
+  "v4_c1_town.jpg",
+  "The city towers rising over the coastal plain"
  ],
  "c1_oilfire": [
-  "still_c1_oilfire.jpg",
-  "A burning oil spill spreading across the ground, fire packed onto the iridescent film"
+  "v4_oilfire.jpg",
+  "A regime oil site erupting behind its wall, fire and smoke rolling across the plain"
  ],
  "c1_blaze": [
-  "still_c1_blaze.jpg",
-  "Close view of flame standing on the iridescent oil film"
+  "v4_blaze.jpg",
+  "The power station burning after a strike, a gunship climbing out of the smoke"
  ],
  "c1_salvo": [
   "action_c1_salvo.jpg",
@@ -184,8 +184,8 @@
   "Breaker bands marching ashore on the Tondbad coast"
  ],
  "c1_command": [
-  "still_c1_command.jpg",
-  "Forward Command's watch tower up close, camo hangars below"
+  "v4_c1_command.jpg",
+  "The Marshal's headquarters on the southern ridge, hangars and offices in its grounds"
  ],
  "c2_hero": [
   "v3_refinery.jpg",
@@ -196,47 +196,47 @@
   "A regime building coming down in a cloud of dust in a harbor town"
  ],
  "c2_bandar": [
-  "still_c2_bandar.jpg",
+  "v4_c2_bandar.jpg",
   "Bandar-e Azadi, the east-shore stronghold, walls and war quarter live"
  ],
  "c2_rampart": [
-  "still_c2_rampart.jpg",
-  "The Bandar rampart batteries facing the strait"
+  "v4_c2_rampart.jpg",
+  "A war-quarter block under fire on the strait shore, smoke over the water"
  ],
  "op_c2_01": [
-  "op_c2_01.jpg",
-  "Deh-e Mahi, the fishing port on the strait"
+  "v4_c2_town.jpg",
+  "Deh-e Mahi, the fishing town on the strait"
  ],
  "op_c2_02": [
-  "op_c2_02.jpg",
-  "Bandargah, the harbor city"
+  "v4_c2_city.jpg",
+  "Bandargah, the harbor city, under the ridge"
  ],
  "op_c2_03": [
-  "op_c2_03.jpg",
+  "v4_c2_farms.jpg",
   "Sahelabad on the coastal farm belt"
  ],
  "op_c2_04": [
-  "op_c2_04.jpg",
-  "The Zendan prison compound across the bay"
+  "v4_c2_zendan.jpg",
+  "The Zendan prison compound"
  ],
  "op_c2_05": [
-  "op_c2_05.jpg",
-  "The enrichment site under guard"
+  "v4_c2_nuke.jpg",
+  "The enrichment site under guard below the dunes"
  ],
  "op_c2_06": [
-  "op_c2_06.jpg",
+  "v4_c2_paygah.jpg",
   "Paygah, the Marshal's fortress on the west shore"
  ],
  "c2_bridge": [
-  "still_c2_bridge.jpg",
+  "v4_c2_bridge.jpg",
   "POL-E AZADI, the great causeway across the strait"
  ],
  "c2_refinery": [
-  "still_c2_refinery.jpg",
-  "The west-shore refinery, columns and flare stacks"
+  "v4_c2_refinery.jpg",
+  "The west-shore refinery tanks under a smoke-dark sky"
  ],
  "c2_citadel": [
-  "still_c2_citadel.jpg",
+  "v4_c2_citadel.jpg",
   "The citadel above the strait"
  ],
  "c2_impact": [
@@ -260,52 +260,52 @@
   "The gunship coming out of the fog over autumn forest and flooded paddies"
  ],
  "c3_poster": [
-  "still_c3_airhead.jpg",
-  "The Caspian airhead at dawn"
+  "v4_c3_poster.jpg",
+  "The armored battle train in the Caspian fog, headlamp burning"
  ],
  "c3_train": [
-  "still_c3_train.jpg",
-  "The armored battle train looming out of Caspian fog, headlamp burning"
+  "v4_c3_rail.jpg",
+  "The Shahin rail yard and its station, searchlights sweeping the tracks"
  ],
  "c3_port": [
-  "still_c3_port.jpg",
-  "The Caspian harbor under autumn cloud, cranes over the quay"
+  "v4_c3_harbor.jpg",
+  "The Caspian harbor under autumn cloud"
  ],
  "c3_airhead": [
-  "still_c3_airhead.jpg",
-  "The Caspian airhead at dawn"
+  "v4_c3_resort.jpg",
+  "A regime pad on the Caspian plain, a searchlight beam crossing the ground"
  ],
  "c3_autumn": [
-  "beat_autumn.jpg",
-  "First snow burying the autumn front under a darkening sky"
+  "v4_c3_orchard.jpg",
+  "A regime pad by the orchards, gunships parked on the hardstand"
  ],
  "c3_darkpad": [
-  "bird_darkpad.jpg",
-  "The gunship passing overhead against snowfall at dusk"
+  "v4_c3_overhead.jpg",
+  "The gunship overhead against the autumn sky"
  ],
  "c4_hero": [
-  "still_c4_megabase.jpg",
-  "The megabase sprawled across the snowbound basin"
+  "v4_c4_factory.jpg",
+  "A war factory and its helipads on the snowbound basin, the road grid running to the horizon"
  ],
  "c4_poster": [
-  "still_c4_megabase.jpg",
-  "The megabase sprawled across the snowbound basin"
+  "v4_c4_poster.jpg",
+  "The snowbound basin under low winter cloud"
  ],
  "c4_khoshgeleh": [
-  "still_c4_khoshgeleh.jpg",
-  "The Khoshgeleh rising over the snowbound capital war machine"
+  "v4_c4_core.jpg",
+  "The old capital under snow, a mosque beside the highway and a repair core in the square"
  ],
  "c4_firstlight": [
-  "still_c4_firstlight.jpg",
-  "The gunship at first light on the snow pad"
+  "v4_c4_longwall.jpg",
+  "The concrete wall across the east of the basin, a push road running through it"
  ],
  "c4_silo": [
-  "action_c4_silo.jpg",
-  "The final warhead in its silo"
+  "v4_c4_silo.jpg",
+  "The silo tower behind its walls in the snow"
  ],
  "c4_winter": [
-  "beat_winter.jpg",
-  "Snowbound Parsava at peace, the tricolor flying over a quiet checkpoint"
+  "v4_c4_northcamp.jpg",
+  "The north camp on the snowbound plain"
  ],
  "new_laser": [
   "v3_laser.jpg",
@@ -334,5 +334,9 @@
  "c3_north": [
   "v3_north.jpg",
   "Rockets striking a dormant regime cell at a northern rail depot"
+ ],
+ "new_shark": [
+  "v4_shark.jpg",
+  "A great white breaching beside the Simorgh's hull at sunset"
  ]
 }
