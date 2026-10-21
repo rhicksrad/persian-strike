@@ -28,7 +28,7 @@ jobs:
       - name: Stage site without videos
         run: |
           mkdir -p /tmp/_site
-          rsync -a --exclude='.git' --exclude='.github' --exclude='media/*.mp4' ./ /tmp/_site/
+          rsync -a --exclude='.git' --exclude='.github' --exclude='media/*.mp4' --exclude='tools' ./ /tmp/_site/
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
