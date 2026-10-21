@@ -5,6 +5,7 @@ rotary-wing war crossed with base-building, by Reformat Games LLC.
 
 Live site: https://persianstrike.com/
 
+- Trailer 2, cut from the current build
 - Four in-engine opening cinematics (Operations TONDBAD, TANGEH, SHAHIN, AZADI)
 - In-engine campaign stills
 - Built with the Godot Engine · assets CC0 or original
